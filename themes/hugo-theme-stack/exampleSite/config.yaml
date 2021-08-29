@@ -34,8 +34,8 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        emoji: 🦃
+        subtitle: 數位噴水、虛擬火雞與賽博垂陽路。
         avatar:
             enabled: true
             local: true
@@ -142,7 +142,7 @@ params:
         toggle: true
 
         # Available values: auto, light, dark
-        default: auto
+        default: dark
 
     imageProcessing:
         cover:
@@ -162,7 +162,7 @@ menu:
           pre: home
           params:
               ### For demonstration purpose, the home link will be open in a new tab
-              newTab: true
+              newTab: false
 
 related:
     includeNewer: true
