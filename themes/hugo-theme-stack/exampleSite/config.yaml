@@ -35,7 +35,7 @@ params:
 
     sidebar:
         emoji: ⛲️
-        subtitle: 數 位 噴 水    虛 擬 火 雞        垂 陽 空 間    愛 木 情 仇
+        subtitle: 數 位 噴 水       虛 擬 火 雞           垂 陽 空 間       愛 木 情 仇
         avatar:
             enabled: true
             local: true
