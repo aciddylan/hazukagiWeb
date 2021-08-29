@@ -1,18 +1,18 @@
 baseurl: https://hazukagi.netlify.app
 languageCode: zh-tw
-theme: hugo-theme-stack
+theme: "hugo-theme-stack"
 paginate: 5
 title: 恥ず嘉義
 
 # Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
+disqusShortname: hazukagi
 
 # GA Tracking ID
 googleAnalytics:
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, es, de, nl, it
-DefaultContentLanguage: en
+DefaultContentLanguage: ja
 
 permalinks:
     post: /p/:slug/
@@ -54,11 +54,11 @@ params:
         provider: disqus
 
         disqusjs:
-            shortname:
-            apiUrl:
-            apiKey:
-            admin:
-            adminLabel:
+            shortname: hazukagi
+            apiUrl: https://disqus.skk.moe/disqus/
+            apiKey: fYtnLln2bwhDjrLDU3pBzWOK1F4itKo9PVrbhMB0uu9YAsW2V2fojuReHogY2PoJ
+            admin: disqus_cGEuZUOcPJ
+            adminLabel: 
 
         utterances:
             repo:
