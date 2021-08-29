@@ -55,9 +55,9 @@ params:
 
         disqusjs:
             shortname: hazukagi
-            apiUrl: 
-            apiKey: ban7TZPAXuksgD1ww3WhGPgeobkWfaDNXHdbJSFMQ0ClrMPs65EYJ0l2MxKdXSuj
-            admin: 
+            apiUrl: https://disqus.skk.moe/disqus/
+            apiKey: fYtnLln2bwhDjrLDU3pBzWOK1F4itKo9PVrbhMB0uu9YAsW2V2fojuReHogY2PoJ
+            admin: disqus_cGEuZUOcPJ
             adminLabel: 
 
         utterances:
