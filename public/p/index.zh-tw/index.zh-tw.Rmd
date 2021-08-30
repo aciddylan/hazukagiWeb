@@ -15,6 +15,8 @@ math: ~
 license: ~
 hidden: no
 comments: yes
+aliases:
+  - migrate-from-jekyl
 ---
 
 前幾天回到家中與父母聚餐，席間談到本魯過幾天後，會去順天堂醫院詢問有關許世賢的事情。魯媽立刻說了：「我知道，許世賢是中醫嗎？」
