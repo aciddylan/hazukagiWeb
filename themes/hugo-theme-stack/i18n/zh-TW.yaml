@@ -18,7 +18,7 @@ article:
         other: 最後更新於
 
     readingTime:
-        other: "人生浪費: {{ .Count }} 分鐘"
+        other: "閱讀時間 {{ .Count }} 分鐘"
 
 notFound:
     title:

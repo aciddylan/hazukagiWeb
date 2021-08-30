@@ -2,143 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ♀ 恥 △ ず ⊕ 嘉 ▽ 義 ♂</title>
-    <link>https://hazukagi.netlify.app/tags/</link>
+    <link>https://hazukagi.sintaika.com/tags/</link>
     <description>Recent content in Tags on ♀ 恥 △ ず ⊕ 嘉 ▽ 義 ♂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hazukagi.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>中央噴水</title>
-      <link>https://hazukagi.netlify.app/tags/%E4%B8%AD%E5%A4%AE%E5%99%B4%E6%B0%B4/</link>
-      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://hazukagi.netlify.app/tags/%E4%B8%AD%E5%A4%AE%E5%99%B4%E6%B0%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>民主聖地</title>
-      <link>https://hazukagi.netlify.app/tags/%E6%B0%91%E4%B8%BB%E8%81%96%E5%9C%B0/</link>
-      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://hazukagi.netlify.app/tags/%E6%B0%91%E4%B8%BB%E8%81%96%E5%9C%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>許世賢</title>
-      <link>https://hazukagi.netlify.app/tags/%E8%A8%B1%E4%B8%96%E8%B3%A2/</link>
-      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://hazukagi.netlify.app/tags/%E8%A8%B1%E4%B8%96%E8%B3%A2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>plot</title>
-      <link>https://hazukagi.netlify.app/tags/plot/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      
-      <guid>https://hazukagi.netlify.app/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>https://hazukagi.netlify.app/tags/r-markdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      
-      <guid>https://hazukagi.netlify.app/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regression</title>
-      <link>https://hazukagi.netlify.app/tags/regression/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      
-      <guid>https://hazukagi.netlify.app/tags/regression/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hazukagi.sintaika.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>css</title>
-      <link>https://hazukagi.netlify.app/tags/css/</link>
+      <link>https://hazukagi.sintaika.com/tags/css/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hazukagi.netlify.app/tags/css/</guid>
+      <guid>https://hazukagi.sintaika.com/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://hazukagi.netlify.app/tags/html/</link>
+      <link>https://hazukagi.sintaika.com/tags/html/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hazukagi.netlify.app/tags/html/</guid>
+      <guid>https://hazukagi.sintaika.com/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://hazukagi.netlify.app/tags/markdown/</link>
+      <link>https://hazukagi.sintaika.com/tags/markdown/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hazukagi.netlify.app/tags/markdown/</guid>
+      <guid>https://hazukagi.sintaika.com/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://hazukagi.netlify.app/tags/themes/</link>
+      <link>https://hazukagi.sintaika.com/tags/themes/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hazukagi.netlify.app/tags/themes/</guid>
+      <guid>https://hazukagi.sintaika.com/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>privacy</title>
-      <link>https://hazukagi.netlify.app/tags/privacy/</link>
+      <link>https://hazukagi.sintaika.com/tags/privacy/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hazukagi.netlify.app/tags/privacy/</guid>
+      <guid>https://hazukagi.sintaika.com/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>https://hazukagi.netlify.app/tags/shortcodes/</link>
+      <link>https://hazukagi.sintaika.com/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hazukagi.netlify.app/tags/shortcodes/</guid>
+      <guid>https://hazukagi.sintaika.com/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tag with whitespaces</title>
-      <link>https://hazukagi.netlify.app/tags/tag-with-whitespaces/</link>
+      <link>https://hazukagi.sintaika.com/tags/tag-with-whitespaces/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hazukagi.netlify.app/tags/tag-with-whitespaces/</guid>
+      <guid>https://hazukagi.sintaika.com/tags/tag-with-whitespaces/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>https://hazukagi.netlify.app/tags/text/</link>
+      <link>https://hazukagi.sintaika.com/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hazukagi.netlify.app/tags/text/</guid>
+      <guid>https://hazukagi.sintaika.com/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>https://hazukagi.netlify.app/tags/emoji/</link>
+      <link>https://hazukagi.sintaika.com/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hazukagi.netlify.app/tags/emoji/</guid>
+      <guid>https://hazukagi.sintaika.com/tags/emoji/</guid>
       <description></description>
     </item>
     
