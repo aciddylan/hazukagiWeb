@@ -1,8 +1,8 @@
 baseurl: https://hazukagi.sintaika.com
-languageCode: zh-tw
+languageCode: zh-TW
 theme: "hugo-theme-stack"
 paginate: 5
-title: ♀恥 △ ず ⊕ 嘉 ▽ 義♂
+title: 恥ず嘉義 ᴴᴬᶽᵁᴷᴬᴳᴵ
 
 # Change it to your Disqus shortname before using
 disqusShortname: hazukagi
@@ -12,7 +12,7 @@ googleAnalytics:
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, es, de, nl, it
-DefaultContentLanguage: zh-tw
+DefaultContentLanguage: ja
 
 permalinks:
     post: /p/:slug/
