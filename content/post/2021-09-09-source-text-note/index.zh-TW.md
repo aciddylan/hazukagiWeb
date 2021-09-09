@@ -23,17 +23,35 @@ hidden: no
 comments: yes
 ---
 
-本站是透過R套件Blogdown所搭建的靜態網誌，站內所有文章皆以平面文本（plain text）編寫，通過Pandoc轉換文件中的標記語言後，再以Hugo模板渲染為網頁文章。本文首先將說明在上列架構之下，平面文件的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。本文僅供編輯人員參考，受邀作者可依書寫習慣提交平面文本（plain text）、富文本（rich text）或所見即所得文件（WYSIWYG），唯需注意第二部分格式說明當中的建議。
+本站是透過R[^1]套件Blogdown[^2]所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc[^3]轉換文件中的標記語言後，再以Hugo[^4]模板渲染為網頁文章。本文首先將說明在上列架構之下，平面文件的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。本文僅供編輯人員參考，受邀作者可依書寫習慣提交純文本（plain text）、富文本（rich text）或所見即所得文件（WYSIWYG），唯需注意第二部分格式說明當中的建議。
+
+[^1]: R是一套運用於統計的開發環境，它具有非常活潑的開發生態。透過開發者的集體努力，R有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各種類型的研究報告。詳見[*The R Project for Statistical Computing*](https://www.r-project.org)*。*
+
+[^2]: 由謝益輝所開發的R套件，詳見[*Blogdown*](https://pkgs.rstudio.com/blogdown/)。
+
+[^3]: Pandoc是一個開源的文本轉換工具，Blogdown的文件標記轉換依賴其功能。詳見<https://pandoc.org>
+
+[^4]: Blogdown所依賴的靜態網頁架構，詳見[The world's fastest framework for building websites \| Hugo](https://gohugo.io)。
 
 ## 標記語言
 
-Markdown直覺的標記方式，除了免去所見即所得文件（WYSIWYG）的各種格式錯誤，省下書寫時所浪費的格式調整時間，也讓使用者的書寫得以從Google或Microsoft等企業所提供的封閉式辦公文件當中解放，輕鬆地進行轉換與渲染，並銜接各種工作流程。本站使用的R套件Blogdown即是一個以Markdown為基礎的靜態網頁環境，使用者可以直接將具有Markdown標記的平面文件轉換為網頁貼文。
+Markdown[^5]直覺的標記方式，除了免去所見即所得文件（WYSIWYG）的各種格式錯誤，省下書寫時所浪費的格式調整時間，也讓使用者的書寫得以從Google或Microsoft等企業所提供的封閉式辦公文件當中解放，輕鬆地進行轉換與渲染，並銜接各種工作流程。本站使用的R套件Blogdown即是一個以Markdown為基礎的靜態網頁環境，使用者可以直接將具有Markdown標記的平面文件轉換為網頁貼文。
 
-Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。其靜態網頁架構Hugo支援Tex數學公式，也提供Shortcode語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex管理所引用的參考文獻。
+[^5]: 由John Gruber所開發的輕量標記語言，因未訂定標準，目前已出現許多衍生版本。Blogdown所使用的版本為Pandoc Markdown，此版本也運用在RMarkdown及Bookdown等R套件中。本文僅列出本站需使用的標記方式，完整詳細的標記規則請見Rmarkdown中的說明[Pandoc Markdown](https://garrettgman.github.io/rmarkdown/authoring_pandoc_markdown.html)。
 
-本節將依功能範疇分為Markdown、Hugo與Blogdown等三個部分，簡單介紹以上所提的標記法與顯示效果。若需要更詳細的資訊，建議參考Blogdown開發者謝益輝所著的專書[*《blogdown: Creating Websites with R Markdown》*](https://bookdown.org/yihui/blogdown/)。
+Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。其靜態網頁架構Hugo支援Tex[^6]數學公式，也提供Shortcode[^7]語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex[^8]管理所引用的參考文獻。
+
+[^6]: Tex是一種文本排版系統，由Donald Ervin Knuth開發用於學術寫作，在目前某些開發較完整的Markdown編輯器中作為數學公式的補充標記語言。
+
+[^7]: Shortcode是Hugo由所提供來補充Markdown插入多媒體的標記語言。
+
+[^8]: BibTex是與LaTex配合作為引用文獻資料的標記文本格式，是目前許多Markdown編輯器處理引用文獻的主流格式，詳見[BibTex.org](http://www.bibtex.org)。
+
+本節將依功能分為Markdown與Blogdown等兩個部分，簡單介紹以上所提的標記法與顯示效果。若需要更詳細的資訊，建議參考Blogdown開發者謝益輝所著的專書[*《blogdown: Creating Websites with R Markdown》*](https://bookdown.org/yihui/blogdown/)。
 
 ### Markdown
+
+Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法，相關的編輯器、筆記軟體及線上工具也應運而生。
 
 #### 標題
 
@@ -59,7 +77,9 @@ Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種�
 
 #### 跳脫字元
 
-### Hugo
+### Blogdown
+
+#### Mathematical
 
 #### Shortcode
 
@@ -70,10 +90,6 @@ Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種�
 ##### Instagram
 
 ##### Tweet
-
-#### Mathematical
-
-### Blogdown
 
 #### R code
 
