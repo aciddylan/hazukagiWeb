@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='本網站透過Hugo架構搭建，本篇文章將介紹其以markdown語法基礎的平面文件編寫方式，以及轉譯為網頁貼文之後的效果，以供文章作者與編輯參考。'><title>源稿編碼格式說明</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='本篇文章將介紹markdown語法基礎，展示其編寫並轉譯為網頁貼文之後的效果。'><title>源稿編碼格式說明</title>
 
 <link rel='canonical' href='https://hazukagi.sintaika.com/p/source-text-note/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='源稿編碼格式說明'>
-<meta property='og:description' content='本網站透過Hugo架構搭建，本篇文章將介紹其以markdown語法基礎的平面文件編寫方式，以及轉譯為網頁貼文之後的效果，以供文章作者與編輯參考。'>
+<meta property='og:description' content='本篇文章將介紹markdown語法基礎，展示其編寫並轉譯為網頁貼文之後的效果。'>
 <meta property='og:url' content='https://hazukagi.sintaika.com/p/source-text-note/'>
 <meta property='og:site_name' content='恥ず嘉義 ᴴᴬᶽᵁᴷᴬᴳᴵ'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='themes' /><meta property='article:tag' content='css' /><meta property='article:tag' content='markdown' /><meta property='article:tag' content='shortcodes' /><meta property='article:tag' content='html' /><meta property='article:tag' content='emoji' /><meta property='article:tag' content='text' /><meta property='article:tag' content='tag with whitespaces' /><meta property='article:published_time' content='2021-09-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-09-09T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="源稿編碼格式說明">
-<meta name="twitter:description" content="本網站透過Hugo架構搭建，本篇文章將介紹其以markdown語法基礎的平面文件編寫方式，以及轉譯為網頁貼文之後的效果，以供文章作者與編輯參考。">
+<meta name="twitter:description" content="本篇文章將介紹markdown語法基礎，展示其編寫並轉譯為網頁貼文之後的效果。">
     </head>
     <body class="
     article-page has-toc
@@ -82,7 +82,7 @@
 
     
     <h3 class="article-subtitle">
-        本網站透過Hugo架構搭建，本篇文章將介紹其以markdown語法基礎的平面文件編寫方式，以及轉譯為網頁貼文之後的效果，以供文章作者與編輯參考。
+        本篇文章將介紹markdown語法基礎，展示其編寫並轉譯為網頁貼文之後的效果。
     </h3>
     
 
@@ -119,12 +119,36 @@
 </header>
 
     <section class="article-content">
-    <h2 id="標記語言">標記語言</h2>
+    <p>本網站是透過Blogdown與Hugo架構所搭建的靜態網誌，所有文章皆以平面文件進行編寫。通過Pandoc轉換平面文件中的標記語言後，由Hugo模板渲染為網頁文章。本文分為兩部分，第一部分介紹以markdown語法為基礎的平面文件編寫方式，並展示平面文件經Pandoc轉換為網頁貼文之後的效果；第二部分為格式說明，包括有文章結構、層級安排及引用格式等相關建議。</p>
+<p>本篇僅供編輯人員參考，邀稿作者可依書寫習慣提交平面、富文本或所見即所得文件，唯需注意第二部分格式說明當中的建議。</p>
+<h2 id="標記語言">標記語言</h2>
 <h3 id="markdown">Markdown</h3>
-<h3 id="shortcode">Shortcode</h3>
-<h3 id="tex">Tex</h3>
-<h3 id="emoji">Emoji</h3>
+<h4 id="標題">標題</h4>
+<h4 id="段落">段落</h4>
+<h4 id="粗體">粗體</h4>
+<h4 id="斜體">斜體</h4>
+<h4 id="註腳">註腳</h4>
+<h4 id="引文">引文</h4>
+<h4 id="表格">表格</h4>
+<h4 id="程式碼">程式碼</h4>
+<h4 id="列表">列表</h4>
+<h4 id="連結">連結</h4>
+<h4 id="圖片">圖片</h4>
+<h4 id="跳脫字元">跳脫字元</h4>
+<h3 id="hugo">Hugo</h3>
+<h4 id="shortcode">Shortcode</h4>
+<h5 id="youtube">Youtube</h5>
+<h5 id="vimeo">Vimeo</h5>
+<h5 id="instagram">Instagram</h5>
+<h5 id="tweet">Tweet</h5>
+<h4 id="mathematical">Mathematical</h4>
+<h3 id="blogdown">Blogdown</h3>
+<h4 id="r-code">R code</h4>
+<h4 id="bibliography">Bibliography</h4>
 <h2 id="格式說明">格式說明</h2>
+<h3 id="文章結構">文章結構</h3>
+<h3 id="層級安排">層級安排</h3>
+<h3 id="引用格式">引用格式</h3>
 
 </section>
 
@@ -346,13 +370,43 @@
   <ol>
     <li><a href="#標記語言">標記語言</a>
       <ol>
-        <li><a href="#markdown">Markdown</a></li>
-        <li><a href="#shortcode">Shortcode</a></li>
-        <li><a href="#tex">Tex</a></li>
-        <li><a href="#emoji">Emoji</a></li>
+        <li><a href="#markdown">Markdown</a>
+          <ol>
+            <li><a href="#標題">標題</a></li>
+            <li><a href="#段落">段落</a></li>
+            <li><a href="#粗體">粗體</a></li>
+            <li><a href="#斜體">斜體</a></li>
+            <li><a href="#註腳">註腳</a></li>
+            <li><a href="#引文">引文</a></li>
+            <li><a href="#表格">表格</a></li>
+            <li><a href="#程式碼">程式碼</a></li>
+            <li><a href="#列表">列表</a></li>
+            <li><a href="#連結">連結</a></li>
+            <li><a href="#圖片">圖片</a></li>
+            <li><a href="#跳脫字元">跳脫字元</a></li>
+          </ol>
+        </li>
+        <li><a href="#hugo">Hugo</a>
+          <ol>
+            <li><a href="#shortcode">Shortcode</a></li>
+            <li><a href="#mathematical">Mathematical</a></li>
+          </ol>
+        </li>
+        <li><a href="#blogdown">Blogdown</a>
+          <ol>
+            <li><a href="#r-code">R code</a></li>
+            <li><a href="#bibliography">Bibliography</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
-    <li><a href="#格式說明">格式說明</a></li>
+    <li><a href="#格式說明">格式說明</a>
+      <ol>
+        <li><a href="#文章結構">文章結構</a></li>
+        <li><a href="#層級安排">層級安排</a></li>
+        <li><a href="#引用格式">引用格式</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
                 </div>

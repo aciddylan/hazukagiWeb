@@ -12,12 +12,36 @@
         <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
         
         <guid>https://hazukagi.sintaika.com/p/source-text-note/</guid>
-        <description>&lt;h2 id=&#34;標記語言&#34;&gt;標記語言&lt;/h2&gt;
+        <description>&lt;p&gt;本網站是透過Blogdown與Hugo架構所搭建的靜態網誌，所有文章皆以平面文件進行編寫。通過Pandoc轉換平面文件中的標記語言後，由Hugo模板渲染為網頁文章。本文分為兩部分，第一部分介紹以markdown語法為基礎的平面文件編寫方式，並展示平面文件經Pandoc轉換為網頁貼文之後的效果；第二部分為格式說明，包括有文章結構、層級安排及引用格式等相關建議。&lt;/p&gt;
+&lt;p&gt;本篇僅供編輯人員參考，邀稿作者可依書寫習慣提交平面、富文本或所見即所得文件，唯需注意第二部分格式說明當中的建議。&lt;/p&gt;
+&lt;h2 id=&#34;標記語言&#34;&gt;標記語言&lt;/h2&gt;
 &lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
-&lt;h3 id=&#34;shortcode&#34;&gt;Shortcode&lt;/h3&gt;
-&lt;h3 id=&#34;tex&#34;&gt;Tex&lt;/h3&gt;
-&lt;h3 id=&#34;emoji&#34;&gt;Emoji&lt;/h3&gt;
+&lt;h4 id=&#34;標題&#34;&gt;標題&lt;/h4&gt;
+&lt;h4 id=&#34;段落&#34;&gt;段落&lt;/h4&gt;
+&lt;h4 id=&#34;粗體&#34;&gt;粗體&lt;/h4&gt;
+&lt;h4 id=&#34;斜體&#34;&gt;斜體&lt;/h4&gt;
+&lt;h4 id=&#34;註腳&#34;&gt;註腳&lt;/h4&gt;
+&lt;h4 id=&#34;引文&#34;&gt;引文&lt;/h4&gt;
+&lt;h4 id=&#34;表格&#34;&gt;表格&lt;/h4&gt;
+&lt;h4 id=&#34;程式碼&#34;&gt;程式碼&lt;/h4&gt;
+&lt;h4 id=&#34;列表&#34;&gt;列表&lt;/h4&gt;
+&lt;h4 id=&#34;連結&#34;&gt;連結&lt;/h4&gt;
+&lt;h4 id=&#34;圖片&#34;&gt;圖片&lt;/h4&gt;
+&lt;h4 id=&#34;跳脫字元&#34;&gt;跳脫字元&lt;/h4&gt;
+&lt;h3 id=&#34;hugo&#34;&gt;Hugo&lt;/h3&gt;
+&lt;h4 id=&#34;shortcode&#34;&gt;Shortcode&lt;/h4&gt;
+&lt;h5 id=&#34;youtube&#34;&gt;Youtube&lt;/h5&gt;
+&lt;h5 id=&#34;vimeo&#34;&gt;Vimeo&lt;/h5&gt;
+&lt;h5 id=&#34;instagram&#34;&gt;Instagram&lt;/h5&gt;
+&lt;h5 id=&#34;tweet&#34;&gt;Tweet&lt;/h5&gt;
+&lt;h4 id=&#34;mathematical&#34;&gt;Mathematical&lt;/h4&gt;
+&lt;h3 id=&#34;blogdown&#34;&gt;Blogdown&lt;/h3&gt;
+&lt;h4 id=&#34;r-code&#34;&gt;R code&lt;/h4&gt;
+&lt;h4 id=&#34;bibliography&#34;&gt;Bibliography&lt;/h4&gt;
 &lt;h2 id=&#34;格式說明&#34;&gt;格式說明&lt;/h2&gt;
+&lt;h3 id=&#34;文章結構&#34;&gt;文章結構&lt;/h3&gt;
+&lt;h3 id=&#34;層級安排&#34;&gt;層級安排&lt;/h3&gt;
+&lt;h3 id=&#34;引用格式&#34;&gt;引用格式&lt;/h3&gt;
 </description>
         </item>
         <item>
