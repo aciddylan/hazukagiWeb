@@ -2,43 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hazukagi.sintaika.com/categories/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/tags/css/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/tags/emoji/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/tags/html/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/tags/markdown/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/post/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/tags/shortcodes/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/categories/syntax/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/tags/tag-with-whitespaces/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/tags/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/tags/text/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/tags/themes/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/categories/themes/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/p/source-text-note/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hazukagi.sintaika.com/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hazukagi.sintaika.com/page/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hazukagi.sintaika.com/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hazukagi.sintaika.com/p/markdown-syntax-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/post/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/categories/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hazukagi.sintaika.com/tags/privacy/</loc>
@@ -47,13 +62,7 @@
     <loc>https://hazukagi.sintaika.com/p/rich-content/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hazukagi.sintaika.com/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hazukagi.sintaika.com/p/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/tags/tag-with-whitespaces/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hazukagi.sintaika.com/categories/test/</loc>
@@ -62,14 +71,8 @@
     <loc>https://hazukagi.sintaika.com/categories/test-with-whitespaces/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hazukagi.sintaika.com/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hazukagi.sintaika.com/p/math-typesetting/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hazukagi.sintaika.com/p/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>

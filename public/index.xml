@@ -6,7 +6,21 @@
         <description>Recent content on 恥ず嘉義 ᴴᴬᶽᵁᴷᴬᴳᴵ</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-TW</language>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hazukagi.sintaika.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hazukagi.sintaika.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>源稿編碼說明</title>
+        <link>https://hazukagi.sintaika.com/p/source-text-note/</link>
+        <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://hazukagi.sintaika.com/p/source-text-note/</guid>
+        <description>&lt;h2 id=&#34;標記語言&#34;&gt;標記語言&lt;/h2&gt;
+&lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
+&lt;h3 id=&#34;shortcode&#34;&gt;Shortcode&lt;/h3&gt;
+&lt;h3 id=&#34;tex&#34;&gt;Tex&lt;/h3&gt;
+&lt;h3 id=&#34;emoji&#34;&gt;Emoji&lt;/h3&gt;
+&lt;h2 id=&#34;格式說明&#34;&gt;格式說明&lt;/h2&gt;
+</description>
+        </item>
+        <item>
         <title>Markdown Syntax Guide</title>
         <link>https://hazukagi.sintaika.com/p/markdown-syntax-guide/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
