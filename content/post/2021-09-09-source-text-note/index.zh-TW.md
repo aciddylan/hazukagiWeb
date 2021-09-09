@@ -15,7 +15,7 @@ tags:
   - emoji
   - text
   - tag with whitespaces
-description: 本篇文章將介紹markdown語法基礎，展示其編寫並轉譯為網頁貼文之後的效果。
+description: 本篇文章將介紹markdown語法基礎，展示其編寫並轉譯為網頁貼文之後的效果，並說明文章結構與引用格式等。
 image: ~
 math: ~
 license: ~
