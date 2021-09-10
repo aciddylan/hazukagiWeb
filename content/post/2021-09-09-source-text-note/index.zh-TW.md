@@ -61,15 +61,15 @@ Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法
 
 網路上已有不少對Markdown編輯器的推薦，許多筆記軟體如[Notion](https://www.notion.so/)、[Evernote](https://evernote.com)、[Roam Research](https://roamresearch.com)及[Obsidian](https://obsidian.md)等，都是以Markdown為基礎進行文本的標記與渲染。如果你已經用習慣了以上的軟體，可直接跳過本小節，但如果你是Markdown新手，或是想要開始嘗試開源軟體的話，可以試著瞭解以下所推薦的編輯器。
 
--   [**Atom**](https://atom.io)：[GitHub](https://github.com)開發的開源程式編輯器，在[GitHub](https://github.com)的生態系中有相當豐富的外掛。推薦給對Python等程式語言有興趣，或預計會開始學習程式語言的人。
+-   [**Atom**](https://atom.io)：GitHub開發的開源程式編輯器，在GitHub的生態系中有相當豐富的外掛。推薦給對Python等程式語言有興趣，或預計會開始學習程式語言的人。
 
--   [**RStudio**](https://www.rstudio.com)：功能強大的R語言整合開發環境（Integrated Development Environment, IDE），建議還在跑SPSS[^9]的朋友們趕快棄坑，轉投R語言的陣營。[RStudio](https://www.rstudio.com)的生態系除了擁有各種強大的統計功能套件外，圍繞著Rmarkdown[^10]套件的書寫生態也相當豐富（並有支援[Zotero](https://www.zotero.org)[^11]），整合了資料蒐集、運算研究與書寫產出等流程，適合社會科學或數據科學研究者。
+-   [**RStudio**](https://www.rstudio.com)：功能強大的R語言整合開發環境（Integrated Development Environment, IDE），建議還在跑SPSS[^9]的朋友們趕快棄坑，轉投R語言的陣營。RStudio的生態系除了擁有各種強大的統計功能套件外，圍繞著Rmarkdown[^10]套件的書寫生態也相當豐富（並有支援Zotero[^11]），整合了資料蒐集、運算研究與書寫產出等流程，適合社會科學或數據科學研究者。
 
--   [**Zettlr**](https://www.zettlr.com)：與[Roam Research](https://roamresearch.com)和[Obsidian](https://obsidian.md)一樣，主要的功能是卡片盒（Zettelkasten）筆記法[^12]，支援wiki式的網絡化筆記語法。差別在於Zettlr是開源軟體，並且對[Zotero](https://www.zotero.org)有直接支援，適合不需要用到統計，且對卡片盒有學習耐心的學術研究者。
+-   [**Zettlr**](https://www.zettlr.com)：與Roam Research和Obsidian一樣，主要的功能是卡片盒（Zettelkasten）筆記法[^12]，支援wiki式的網絡化筆記語法。差別在於Zettlr是開源軟體，並且對Zotero有直接支援，適合不需要用到統計，且對卡片盒有學習耐心的學術研究者。
 
 -   [**Mark Text**](https://marktext.app)：以上三種開源軟體的Markdown功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯Markdown文件，我會推薦這個功能強大的開源編輯器。就算有安裝以上三種軟體，我也會推薦它作為備用或不需用到其主要功能時的主力編輯器。
 
--   [**Byword**](https://bywordapp.com)：非開源，售價為新台幣190元，除了可以用iCloud空間作為資料床外，也可與多種雲端空間同步，推薦除了電腦外也需要在iOS上工作的人（也有macOS的版本）。我個人是使用另一款同樣支援iCloud空間作為資料床的[Pretext](https://apps.apple.com/app/pretext/id1347707000)（非開源、基本功能免費），推薦給跟我一樣覺得能用就好的人。
+-   [**Byword**](https://bywordapp.com)：非開源，售價為新台幣190元，推薦這個軟體的原因是iOS上缺乏夠好的開源編輯器，但許多人還是會有行動裝置的工作需求（Android應該會有比較多不錯用的Markdown開源編輯器，但我沒涉略）。Byword最主要是因應Apple生態系的工作需求，它除了可以用iCloud空間作為資料床外，也可與多種雲端空間同步，編輯功能也非常完整，推薦愛吃蘋果的阿迪仔與阿咩仔使用。我個人則是使用另一款同樣支援iCloud空間作為資料床的[Pretext](https://apps.apple.com/app/pretext/id1347707000)（非開源、基本功能免費），推薦給跟我一樣覺得能用就好的人。
 
 [^9]: SPSS全稱為Statistical Package for the Social Sciences，是IBM所推出的又弱又貴的統計軟體，詳見[SPSS](http://www.ibm.com/analytics/us/en/technology/spss/)。
 
@@ -80,8 +80,6 @@ Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法
 [^12]: 卡片盒（Zettelkasten）是提出社會系統理論的德國學者Niklas Luhemann生前使用的筆記法，最近諸多紅到發紫的筆記軟體都是以其網絡化的概念來設計。但其實此種筆記法需要有非常嚴謹的層級規範，並非許多中文教學文章所述，不斷紀錄和連結就可以變得跟他大佬一樣聰明伶俐。是一種門檻極高的筆記方式，不推薦各位朋友使用。
 
 #### 標題
-
-Markdow作為標記文字，層級是最基礎的
 
 #### 段落
 
