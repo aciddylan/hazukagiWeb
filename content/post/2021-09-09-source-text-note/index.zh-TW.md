@@ -23,7 +23,7 @@ hidden: no
 comments: yes
 ---
 
-本站是透過R[^1]的Blogdown[^2]套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc[^3]轉換文件中的標記語言後，再以Hugo[^4]模板渲染為網頁文章。本文首先將說明在上列架構之下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。本文僅供編輯人員參考，受邀作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），唯需注意第二部分格式說明當中的建議。
+本站是透過R[^1]的Blogdown[^2]套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc[^3]轉換文件中的標記語言後，再以Hugo[^4]模板渲染為網頁文章。本文首先將說明此架構下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。本文僅供編輯人員參考，受邀作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），唯需注意第二部分格式說明當中的建議。
 
 [^1]: R是一套運用於統計的開發環境，具有非常活潑的開發生態。透過開發者的集體努力，R有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各種類型的研究報告。詳見[*The R Project for Statistical Computing*](https://www.r-project.org)*。*
 
@@ -39,7 +39,7 @@ Markdown[^5]直覺的標記方式，除了免去如Word檔等所見即所得文�
 
 [^5]: 由John Gruber所開發的輕量標記語言，因未訂定標準，目前已出現許多衍生版本。Blogdown所使用的版本為Pandoc Markdown，此版本也運用在RMarkdown及Bookdown等R套件中。本文僅列出本站需使用的標記方式，完整詳細的標記規則請見Rmarkdown中的說明[Pandoc Markdown](https://garrettgman.github.io/rmarkdown/authoring_pandoc_markdown.html)。
 
-Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。其靜態網頁架構Hugo支援LaTex[^6]數學公式，也提供Shortcode[^7]語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex[^8]管理所引用的參考文獻。
+Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。除了支援LaTex[^6]數學公式，Hugo也提供Shortcode[^7]語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex[^8]管理所引用的參考文獻。
 
 [^6]: LaTex是一種文本排版系統，由Donald Ervin Knuth開發用於學術寫作，在目前某些開發較完整的Markdown編輯器中作為數學公式的補充標記語言。
 
