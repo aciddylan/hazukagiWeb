@@ -1,12 +1,11 @@
 ---
 aliases:
 - about-us
-- about-hugo
 - contact
 date: "2019-02-28"
-description: Hugo, the world's fastest framework for building websites
+description: 色違い嘉義の観光情報とニュース報道
 lastmod: "2020-10-09"
-license: CC BY-NC-ND
+license: ~
 menu:
   main:
     pre: user
@@ -14,20 +13,4 @@ menu:
 title: About
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-
-Hugo makes use of a variety of open source projects including:
-
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+恥̛̂̀͆ず͋̀͂́͠嘉̏̌́͆̕義̆̈́͠ ᴴ̂́̈́͞ᴬ͗̀͠ᶽ͂̿̇͌̓͞ᵁ̛̑̃̈͒̚ᴷ̑̑̚͞ᴬ̛͊̋̔̄ᴳ͛̿͠ᴵ́͊͛̏̋͡是̛̊͂̎̾嘉̑̏̑̕̚義͆̇̋͊͞的̔͋͡資̉̓͠訊̇̍̆̇̅͝平҇̀͗台̂̈͝，̉̈́̌͝這̓̌̎͂̉͝邊̄̂̒̊͡有́̈́̊̽͡各̀̊̄͡種͊̉͠新̈́͛̓̃̋̕鮮̛̽͐̅͑̂好͌̈͞玩̅的͌̏̂̕旅̓́̚͝遊̆̈́͞資̋͋̀͠訊̆͛̇̀͡和̇͑̄̀͠新͒̾̄́͞聞̆̐͋͡情̄̾̄̈̍͝報̇̏̾̕̚，̛̃͐歡͋͋̔̓̕迎̐̔͞您͒͆̒͡樓҇̑̅頂̏̋͊͡揪̛̈́̆̄樓̒̀̕腳̍́̆̚͠阿̛̍̽͐͊母̊͗̈̍́͝揪́̇̄̎̀͞阿̏̈͛͌͡爸̀́̾͞趕͒̓̆緊͊͆̃̃̃͡來̛͊́̑̌̂嘉̓̏͊̕̚義̓̎̾͊͒͞七͋͊͛͐̈́̕逃҇̆̈́͌。̛̇̅̅̆̉
