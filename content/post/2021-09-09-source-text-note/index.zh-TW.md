@@ -69,7 +69,7 @@ Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法
 
 -   [**Mark Text**](https://marktext.app)：以上三種開源軟體的Markdown功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯Markdown文件，我會推薦這個功能強大的開源編輯器。
 
--   [**Byword**](https://bywordapp.com)：非開源，售價為NTD190，有macOS版可與多種雲端空間同步，推薦給需要在iOS上工作的人。我個人是使用另一款非開源但基本功能免費的[Pretext](https://apps.apple.com/app/pretext/id1347707000)，推薦給跟我一樣覺得能用就好的人。
+-   [**Byword**](https://bywordapp.com)：非開源，售價為NTD190，除了可以用iCloud空間作為資料床外，也可與多種雲端空間同步，推薦除了電腦外也需要在iOS上工作的人（也有macOS的版本）。我個人是使用另一款同樣支援iCloud空間作為資料床的[Pretext](https://apps.apple.com/app/pretext/id1347707000)（非開源、基本功能免費），推薦給跟我一樣覺得能用就好的人。
 
 [^9]: SPSS全稱為Statistical Package for the Social Sciences，是IBM所推出的又弱又貴的統計軟體，詳見[SPSS](http://www.ibm.com/analytics/us/en/technology/spss/)。
 

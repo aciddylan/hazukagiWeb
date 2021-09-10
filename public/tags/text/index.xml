@@ -25,7 +25,7 @@ Markdown Markdown是一種簡潔的標記語言，是目前主流的純文本標
   RStudio：功能強大的R語言整合開發環境（Integrated Development Environment, IDE）建議還在跑SPSS9的朋友們趕快棄坑。RStudio的生態系除了擁有各種強大的統計功能套件外，圍繞著Rmarkdown10套件的書寫生態也相當豐富（也支援Zotero11），整合了資料蒐集、運算研究與書寫產出等流程，適合社會科學或數據科學研究者。
   Zettlr：與Roam Research和Obsidian一樣，主要的功能是卡片盒（Zettelkasten）筆記法12，支援wiki式的網絡化筆記語法。差別在於Zettlr是開源軟體，並且對Zotero有直接支援，適合不需要用到統計，且對卡片盒有學習耐心的學術研究者。
   Mark Text：以上三種開源軟體的Markdown功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯Markdown文件，我會推薦這個功能強大的開源編輯器。
-  Byword：非開源，售價為NTD190，有macOS版可與多種雲端空間同步，推薦給需要在iOS上工作的人。我個人是使用另一款非開源但基本功能免費的Pretext，推薦給跟我一樣覺得能用就好的人。
+  Byword：非開源，售價為NTD190，除了可以用iCloud空間作為資料床外，也可與多種雲端空間同步，推薦除了電腦外也需要在iOS上工作的人（也有macOS的版本）。我個人是使用另一款同樣支援iCloud空間作為資料床的Pretext（非開源、基本功能免費），推薦給跟我一樣覺得能用就好的人。
   標題 段落 粗體 斜體 註腳 引文 表格 程式碼 列表 連結 圖片 跳脫字元 Blogdown Mathematical Shortcode Youtube Vimeo Instagram Tweet R code Bibliography 格式說明 文章結構 層級安排 引用格式   R是一套運用於統計的開發環境，具有非常活潑的開發生態。透過開發者的集體努力，R有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各種類型的研究報告。詳見The R Project for Statistical Computing。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     
