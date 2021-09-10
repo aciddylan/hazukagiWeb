@@ -2,14 +2,12 @@
 author: Hugo Authors
 categories:
 - Test
-- Test with whitespaces
 date: "2019-03-09"
 description: Lorem Ipsum Dolor Si Amet
 image: matt-le-SJSpo9hQf7s-unsplash.jpg
 tags:
 - markdown
 - text
-- tag with whitespaces
 title: Placeholder Text
 ---
 
