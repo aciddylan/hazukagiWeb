@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hazukagi.sintaika.com/about/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/page/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hazukagi.sintaika.com/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hazukagi.sintaika.com/categories/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -41,17 +50,11 @@
     <loc>https://hazukagi.sintaika.com/categories/themes/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hazukagi.sintaika.com/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hazukagi.sintaika.com/p/source-text-note/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hazukagi.sintaika.com/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/page/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hazukagi.sintaika.com/p/markdown-syntax-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
@@ -76,9 +79,6 @@
   </url><url>
     <loc>https://hazukagi.sintaika.com/p/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hazukagi.sintaika.com/about/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hazukagi.sintaika.com/search/</loc>
   </url>
