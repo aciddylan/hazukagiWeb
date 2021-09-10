@@ -39,13 +39,13 @@ Markdown[^5]直覺的標記方式，除了免去如Word檔等所見即所得文�
 
 [^5]: 由John Gruber所開發的輕量標記語言，因未訂定標準，目前已出現許多衍生版本。Blogdown所使用的版本為Pandoc Markdown，此版本也運用在RMarkdown及Bookdown等R套件中。本文僅列出本站需使用的標記方式，完整詳細的標記規則請見Rmarkdown中的說明[Pandoc Markdown](https://garrettgman.github.io/rmarkdown/authoring_pandoc_markdown.html)。
 
-Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。除了支援LaTex[^6]數學公式，Hugo也提供Shortcode[^7]語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex[^8]管理所引用的參考文獻。
+Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。除了支援KaTex[^6]數學公式，Hugo也提供Shortcode[^7]語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex[^8]管理所引用的參考文獻。
 
-[^6]: LaTex是一種文本排版系統，由Donald Ervin Knuth開發用於學術寫作，在目前某些開發較完整的Markdown編輯器中作為數學公式的補充標記語言。
+[^6]: KaTex是Tex文本排版系統的數學公式支援，Tex由Donald Ervin Knuth開發用於學術寫作，KaTex在目前某些開發較完整的Markdown編輯器中作為數學公式的補充標記語言。
 
 [^7]: Shortcode是Hugo用以補充Markdown無法在渲染後的頁面顯示多媒體的語法延伸方案。
 
-[^8]: BibTex是與LaTex配合作為引用文獻資料的標記文本格式，是目前許多Markdown編輯器處理引用文獻的主流格式，詳見[BibTex.org](http://www.bibtex.org)。
+[^8]: BibTex是與Tex作為引用文獻資料的標記文本格式，也是目前許多Markdown編輯器處理引用文獻的主流格式，詳見[BibTex.org](http://www.bibtex.org)。
 
 本節將依先來後到分為通用的Markdown標記語法與Blogdown（含Hugo）的特殊語法功能等兩部分，簡單介紹以上所提的標記法與顯示效果。若需要更詳細的資訊，建議參考Blogdown開發者謝益輝所著的專書[*《blogdown: Creating Websites with R Markdown》*](https://bookdown.org/yihui/blogdown/)。
 
@@ -63,13 +63,13 @@ Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法
 
 -   [**Atom**](https://atom.io)：[GitHub](https://github.com)開發的開源程式編輯器，在[GitHub](https://github.com)的生態系中有相當豐富的外掛。推薦給對Python等程式語言有興趣，或預計會開始學習程式語言的人。
 
--   [**RStudio**](https://www.rstudio.com)：功能強大的R語言整合開發環境（Integrated Development Environment, IDE）建議還在跑SPSS[^9]的朋友們趕快棄坑。[RStudio](https://www.rstudio.com)的生態系除了擁有各種強大的統計功能套件外，圍繞著Rmarkdown[^10]套件的書寫生態也相當豐富（也支援[Zotero](https://www.zotero.org)[^11]），整合了資料蒐集、運算研究與書寫產出等流程，適合社會科學或數據科學研究者。
+-   [**RStudio**](https://www.rstudio.com)：功能強大的R語言整合開發環境（Integrated Development Environment, IDE），建議還在跑SPSS[^9]的朋友們趕快棄坑，轉投R語言的陣營。[RStudio](https://www.rstudio.com)的生態系除了擁有各種強大的統計功能套件外，圍繞著Rmarkdown[^10]套件的書寫生態也相當豐富（並有支援[Zotero](https://www.zotero.org)[^11]），整合了資料蒐集、運算研究與書寫產出等流程，適合社會科學或數據科學研究者。
 
 -   [**Zettlr**](https://www.zettlr.com)：與[Roam Research](https://roamresearch.com)和[Obsidian](https://obsidian.md)一樣，主要的功能是卡片盒（Zettelkasten）筆記法[^12]，支援wiki式的網絡化筆記語法。差別在於Zettlr是開源軟體，並且對[Zotero](https://www.zotero.org)有直接支援，適合不需要用到統計，且對卡片盒有學習耐心的學術研究者。
 
--   [**Mark Text**](https://marktext.app)：以上三種開源軟體的Markdown功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯Markdown文件，我會推薦這個功能強大的開源編輯器。
+-   [**Mark Text**](https://marktext.app)：以上三種開源軟體的Markdown功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯Markdown文件，我會推薦這個功能強大的開源編輯器。就算有安裝以上三種軟體，我也會推薦它作為備用或不需用到其主要功能時的主力編輯器。
 
--   [**Byword**](https://bywordapp.com)：非開源，售價為NTD190，除了可以用iCloud空間作為資料床外，也可與多種雲端空間同步，推薦除了電腦外也需要在iOS上工作的人（也有macOS的版本）。我個人是使用另一款同樣支援iCloud空間作為資料床的[Pretext](https://apps.apple.com/app/pretext/id1347707000)（非開源、基本功能免費），推薦給跟我一樣覺得能用就好的人。
+-   [**Byword**](https://bywordapp.com)：非開源，售價為新台幣190元，除了可以用iCloud空間作為資料床外，也可與多種雲端空間同步，推薦除了電腦外也需要在iOS上工作的人（也有macOS的版本）。我個人是使用另一款同樣支援iCloud空間作為資料床的[Pretext](https://apps.apple.com/app/pretext/id1347707000)（非開源、基本功能免費），推薦給跟我一樣覺得能用就好的人。
 
 [^9]: SPSS全稱為Statistical Package for the Social Sciences，是IBM所推出的又弱又貴的統計軟體，詳見[SPSS](http://www.ibm.com/analytics/us/en/technology/spss/)。
 
@@ -80,6 +80,8 @@ Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法
 [^12]: 卡片盒（Zettelkasten）是提出社會系統理論的德國學者Niklas Luhemann生前使用的筆記法，最近諸多紅到發紫的筆記軟體都是以其網絡化的概念來設計。但其實此種筆記法需要有非常嚴謹的層級規範，並非許多中文教學文章所述，不斷紀錄和連結就可以變得跟他大佬一樣聰明伶俐。是一種門檻極高的筆記方式，不推薦各位朋友使用。
 
 #### 標題
+
+Markdow作為標記文字，層級是最基礎的
 
 #### 段落
 
