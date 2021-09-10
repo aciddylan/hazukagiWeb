@@ -13,17 +13,20 @@
       <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://hazukagi.sintaika.com/p/source-text-note/</guid>
-      <description>本站是透過R1套件Blogdown2所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc3轉換文件中的標記語言後，再以Hugo4模板渲染為網頁文章。本文首先將說明在上列架構之下，平面文件的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。本文僅供編輯人員參考，受邀作者可依書寫習慣提交純文本（plain text）、富文本（rich text）或所見即所得文件（WYSIWYG），唯需注意第二部分格式說明當中的建議。
-標記語言 Markdown5直覺的標記方式，除了免去所見即所得文件（WYSIWYG）的各種格式錯誤，省下書寫時所浪費的格式調整時間，也讓使用者的書寫得以從Google或Microsoft等企業所提供的封閉式辦公文件當中解放，輕鬆地進行轉換與渲染，並銜接各種工作流程。本站使用的R套件Blogdown即是一個以Markdown為基礎的靜態網頁環境，使用者可以直接將具有Markdown標記的平面文件轉換為網頁貼文。
-Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。其靜態網頁架構Hugo支援Tex6數學公式，也提供Shortcode7語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex8管理所引用的參考文獻。
-本節將依功能分為Markdown與Blogdown等兩個部分，簡單介紹以上所提的標記法與顯示效果。若需要更詳細的資訊，建議參考Blogdown開發者謝益輝所著的專書《blogdown: Creating Websites with R Markdown》。
-Markdown Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法，相關的編輯器、筆記軟體及線上工具也應運而生。
-標題 段落 粗體 斜體 註腳 引文 表格 程式碼 列表 連結 圖片 跳脫字元 Blogdown Mathematical Shortcode Youtube Vimeo Instagram Tweet R code Bibliography 格式說明 文章結構 層級安排 引用格式   R是一套運用於統計的開發環境，它具有非常活潑的開發生態。透過開發者的集體努力，R有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各種類型的研究報告。詳見The R Project for Statistical Computing。&amp;#160;&amp;#x21a9;&amp;#xfe0e;
- 由謝益輝所開發的R套件，詳見Blogdown。&amp;#160;&amp;#x21a9;&amp;#xfe0e;
- Pandoc是一個開源的文本轉換工具，Blogdown的文件標記轉換依賴其功能。詳見https://pandoc.org&amp;#160;&amp;#x21a9;&amp;#xfe0e;
- Blogdown所依賴的靜態網頁架構，詳見The world&amp;rsquo;s fastest framework for building websites | Hugo。&amp;#160;&amp;#x21a9;&amp;#xfe0e;
- 由John Gruber所開發的輕量標記語言，因未訂定標準，目前已出現許多衍生版本。Blogdown所使用的版本為Pandoc Markdown，此版本也運用在RMarkdown及Bookdown等R套件中。本文僅列出本站需使用的標記方式，完整詳細的標記規則請見Rmarkdown中的說明Pandoc Markdown。&amp;#160;&amp;#x21a9;&amp;#xfe0e;
- Tex是一種文本排版系統，由Donald Ervin Knuth開發用於學術寫作，在目前某些開發較完整的Markdown編輯器中作為數學公式的補充標記語言。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
+      <description>本站是透過R1的Blogdown2套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc3轉換文件中的標記語言後，再以Hugo4模板渲染為網頁文章。本文首先將說明在上列架構之下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。本文僅供編輯人員參考，受邀作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），唯需注意第二部分格式說明當中的建議。
+標記語言 Markdown5直覺的標記方式，除了免去如Word檔等所見即所得文件（WYSIWYG）的各種格式錯誤，省下書寫時所浪費的格式調整時間，也讓使用者的書寫得以從Google或Microsoft等企業所提供的封閉式辦公文件當中解放，輕鬆進行轉換與渲染，銜接各種工作流程。本站使用的R套件Blogdown即是一個以Markdown為基礎的靜態網頁環境，使用者可以直接將具有Markdown標記的平面文件轉換為網頁貼文。
+Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。其靜態網頁架構Hugo支援LaTex6數學公式，也提供Shortcode7語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex8管理所引用的參考文獻。
+本節將依先來後到分為通用的Markdown標記語法與Blogdown（含Hugo）的特殊語法功能等兩部分，簡單介紹以上所提的標記法與顯示效果。若需要更詳細的資訊，建議參考Blogdown開發者謝益輝所著的專書《blogdown: Creating Websites with R Markdown》。
+Markdown Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法，許多編輯器、筆記軟體及生產力工具現在都已經支援Markdown標記。在此除了說明一些寫作會運用到的基礎語法外，也會推薦一些開源的Markdown編輯器，提供尚未有慣用編輯器的朋友們參考。
+除了編輯文本之外，如何用Pandoc渲染Markdown標記文本為其他類型的文件也是一門學問，尤其是含有中日韓（CJK）字元及LaTex標記的文本，在沒有設定好的狀況下，在轉換為PDF時容易有缺字或渲染失敗的問題。不幸的是使用Pandoc僅僅是Markdown工作流程的基礎功而已，要建立流暢的工作流程，就必須熟悉各種文檔間的轉換及渲染的設定方式。
+或許一開始在學的時候會因為超級折騰，而放棄純文本回去用WYSIWYG。這只能取決於每個人對自己生產的文字有多少不想被綁架的執著，況且這種折騰只是在一種末日預期下&amp;mdash;&amp;mdash;沒有軟體支援、甚至是電力支援&amp;mdash;&amp;mdash;建立進可攻退可守的多元媒介工作流程的前置練習而已。本文僅在這裡給一劑進入Markdown世界前的預防針，畢竟被卡車撞這種事情也不是每個人都會發生。最後，請善用Duckduckgo或Startpage等搜尋引擎（不推薦賣個資又養套殺使用者的Google）或各編輯器所提供的說明文件來學習，本文不再贅述。
+編輯器 網路上已有不少對Markdown編輯器的推薦，許多筆記軟體如Notion、Evernote、Roam Research及Obsidian等，都是以Markdown為基礎進行文本的標記與渲染。如果你已經用習慣了以上的軟體，可直接跳過本小節，但如果你是Markdown新手，或是想要開始嘗試開源軟體的話，可以試著瞭解以下所推薦的編輯器。
+  Atom：GitHub開發的開源程式編輯器，在GitHub的生態系中有相當豐富的外掛。推薦給對Python等程式語言有興趣，或預計會開始學習程式語言的人。
+  RStudio：功能強大的R語言整合開發環境（Integrated Development Environment, IDE）建議還在跑SPSS9的朋友們趕快棄坑。RStudio的生態系除了擁有各種強大的統計功能套件外，圍繞著Rmarkdown10套件的書寫生態也相當豐富（也支援Zotero11），整合了資料蒐集、運算研究與書寫產出等流程，適合社會科學或數據科學研究者。
+  Zettlr：與Roam Research和Obsidian一樣，主要的功能是卡片盒（Zettelkasten）筆記法12，支援wiki式的網絡化筆記語法。差別在於Zettlr是開源軟體，並且對Zotero有直接支援，適合不需要用到統計，且對卡片盒有學習耐心的學術研究者。
+  Mark Text：以上三種開源軟體的Markdown功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯Markdown文件，我會推薦這個功能強大的開源編輯器。
+  Byword：非開源，售價為NTD190，有macOS版可與多種雲端空間同步，推薦給需要在iOS上工作的人。我個人是使用另一款非開源但基本功能免費的Pretext，推薦給跟我一樣覺得能用就好的人。
+  標題 段落 粗體 斜體 註腳 引文 表格 程式碼 列表 連結 圖片 跳脫字元 Blogdown Mathematical Shortcode Youtube Vimeo Instagram Tweet R code Bibliography 格式說明 文章結構 層級安排 引用格式   R是一套運用於統計的開發環境，具有非常活潑的開發生態。透過開發者的集體努力，R有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各種類型的研究報告。詳見The R Project for Statistical Computing。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
     </item>
     
     <item>
