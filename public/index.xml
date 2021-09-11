@@ -54,6 +54,46 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;標題&#34;&gt;標題&lt;/h4&gt;
+&lt;p&gt;不管是哪一種類型的文本，標題層級絕對可以說是最重要的功能。但在Word等WYSIWYG文件當中，常常會因為「看起來像」的原因，而讓使用者混淆內文與標題的格式設定，在Markdown標記中則不常發生這種狀況。（試想你要把內文加粗、放大，並且得到和渲染後的某層標題一樣的字型和顏色效果的話，要加多少標記呢？）&lt;/p&gt;
+&lt;p&gt;在Markdown文件當中，第一級標題通常就代表整份文件的大標，第二級之後才是內文各章節的標題。但依編輯器與轉換設定的不同，渲染規則也會有些許差異。例如，使用RStudio時，如果將文本類型指定為rtical（如ctexart）或是使用bookdown（如ctexbook）時，第一級標題便會是各章節的標題，而文件的大標則會儲存在YAML當中；Blogdown雖然也將大標儲存在YAML中，但內文則遵循一般的標題規則，若在內文使用第一集標題的話，雖然會顯示其格式，但toc會忽略不計。特例的部分就只能請各位跟編輯器好好培養感情，理解自己常用的格式及渲染的效果了，以下將介紹一般的標記規則。&lt;/p&gt;
+&lt;p&gt;標題的標記方式為在行頭以#註記，並在空行後輸入標題文字。#字號的數量代表標題的層級，一般的Markdown標記一共提供有六層的標題記號。以下示範標註方式，並展示渲染後的範例。&lt;/p&gt;
+&lt;p&gt;第一級&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;# 我是標題
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;我是標題&#34;&gt;我是標題&lt;/h1&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第二級&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;## 我是標題
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;我是標題-1&#34;&gt;我是標題&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第三級&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;### 我是標題
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;我是標題-2&#34;&gt;我是標題&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第四級&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;#### 我是標題
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;我是標題-3&#34;&gt;我是標題&lt;/h4&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第五級&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;##### 我是標題
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;我是標題-4&#34;&gt;我是標題&lt;/h5&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第六級&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;###### 我是標題
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h6 id=&#34;我是標題-5&#34;&gt;我是標題&lt;/h6&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;透過以上的標題展示可以看到，第四級之後的標題文本漸漸變得比段落字體還小。因此，除非有特別調整渲染格式，一般Markdown文本在輸出為HTML時，文章結構不建議超過四級。&lt;/p&gt;
 &lt;h4 id=&#34;段落&#34;&gt;段落&lt;/h4&gt;
 &lt;h4 id=&#34;粗體&#34;&gt;粗體&lt;/h4&gt;
 &lt;h4 id=&#34;斜體&#34;&gt;斜體&lt;/h4&gt;

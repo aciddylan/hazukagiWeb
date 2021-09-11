@@ -9,7 +9,7 @@
 <meta property='og:description' content='所有貼文技術的東東都在這裡。'>
 <meta property='og:url' content='https://hazukagi.sintaika.com/p/source-text-note/'>
 <meta property='og:site_name' content='恥ず嘉義ᙚᴵᴺᵀᴬᴵᴷᴬ'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='themes' /><meta property='article:tag' content='css' /><meta property='article:tag' content='markdown' /><meta property='article:tag' content='shortcodes' /><meta property='article:tag' content='html' /><meta property='article:tag' content='emoji' /><meta property='article:tag' content='text' /><meta property='article:tag' content='tag with whitespaces' /><meta property='article:published_time' content='2021-09-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-09-09T00:00:00&#43;00:00'/><meta property='og:image' content='https://hazukagi.sintaika.com/p/source-text-note/Unknown.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='themes' /><meta property='article:tag' content='markdown' /><meta property='article:tag' content='shortcodes' /><meta property='article:tag' content='html' /><meta property='article:tag' content='text' /><meta property='article:published_time' content='2021-09-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-09-09T00:00:00&#43;00:00'/><meta property='og:image' content='https://hazukagi.sintaika.com/p/source-text-note/Unknown.jpg' />
 <meta name="twitter:title" content="源稿の標準">
 <meta name="twitter:description" content="所有貼文技術的東東都在這裡。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://hazukagi.sintaika.com/p/source-text-note/Unknown.jpg' />
@@ -174,6 +174,46 @@
 </li>
 </ul>
 <h4 id="標題">標題</h4>
+<p>不管是哪一種類型的文本，標題層級絕對可以說是最重要的功能。但在Word等WYSIWYG文件當中，常常會因為「看起來像」的原因，而讓使用者混淆內文與標題的格式設定，在Markdown標記中則不常發生這種狀況。（試想你要把內文加粗、放大，並且得到和渲染後的某層標題一樣的字型和顏色效果的話，要加多少標記呢？）</p>
+<p>在Markdown文件當中，第一級標題通常就代表整份文件的大標，第二級之後才是內文各章節的標題。但依編輯器與轉換設定的不同，渲染規則也會有些許差異。例如，使用RStudio時，如果將文本類型指定為rtical（如ctexart）或是使用bookdown（如ctexbook）時，第一級標題便會是各章節的標題，而文件的大標則會儲存在YAML當中；Blogdown雖然也將大標儲存在YAML中，但內文則遵循一般的標題規則，若在內文使用第一集標題的話，雖然會顯示其格式，但toc會忽略不計。特例的部分就只能請各位跟編輯器好好培養感情，理解自己常用的格式及渲染的效果了，以下將介紹一般的標記規則。</p>
+<p>標題的標記方式為在行頭以#註記，並在空行後輸入標題文字。#字號的數量代表標題的層級，一般的Markdown標記一共提供有六層的標題記號。以下示範標註方式，並展示渲染後的範例。</p>
+<p>第一級</p>
+<blockquote>
+<pre><code># 我是標題
+</code></pre>
+<h1 id="我是標題">我是標題</h1>
+</blockquote>
+<p>第二級</p>
+<blockquote>
+<pre><code>## 我是標題
+</code></pre>
+<h2 id="我是標題-1">我是標題</h2>
+</blockquote>
+<p>第三級</p>
+<blockquote>
+<pre><code>### 我是標題
+</code></pre>
+<h3 id="我是標題-2">我是標題</h3>
+</blockquote>
+<p>第四級</p>
+<blockquote>
+<pre><code>#### 我是標題
+</code></pre>
+<h4 id="我是標題-3">我是標題</h4>
+</blockquote>
+<p>第五級</p>
+<blockquote>
+<pre><code>##### 我是標題
+</code></pre>
+<h5 id="我是標題-4">我是標題</h5>
+</blockquote>
+<p>第六級</p>
+<blockquote>
+<pre><code>###### 我是標題
+</code></pre>
+<h6 id="我是標題-5">我是標題</h6>
+</blockquote>
+<p>透過以上的標題展示可以看到，第四級之後的標題文本漸漸變得比段落字體還小。因此，除非有特別調整渲染格式，一般Markdown文本在輸出為HTML時，文章結構不建議超過四級。</p>
 <h4 id="段落">段落</h4>
 <h4 id="粗體">粗體</h4>
 <h4 id="斜體">斜體</h4>
@@ -258,19 +298,13 @@
         
             <a href="/tags/themes/">themes</a>
         
-            <a href="/tags/css/">css</a>
-        
             <a href="/tags/markdown/">markdown</a>
         
             <a href="/tags/shortcodes/">shortcodes</a>
         
             <a href="/tags/html/">html</a>
         
-            <a href="/tags/emoji/">emoji</a>
-        
             <a href="/tags/text/">text</a>
-        
-            <a href="/tags/tag-with-whitespaces/">tag with whitespaces</a>
         
     </section>
 
@@ -473,6 +507,18 @@
           <ol>
             <li><a href="#編輯器">編輯器</a></li>
             <li><a href="#標題">標題</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#我是標題-1">我是標題</a>
+      <ol>
+        <li><a href="#我是標題-2">我是標題</a>
+          <ol>
+            <li><a href="#我是標題-3">我是標題</a></li>
             <li><a href="#段落">段落</a></li>
             <li><a href="#粗體">粗體</a></li>
             <li><a href="#斜體">斜體</a></li>
