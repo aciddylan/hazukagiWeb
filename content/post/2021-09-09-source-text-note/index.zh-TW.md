@@ -69,15 +69,15 @@ Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法
 
 -   [**Mark Text**](https://marktext.app)：以上三種開源軟體的Markdown功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯Markdown文件，我會推薦這個功能強大的開源編輯器。就算有安裝以上三種軟體，我也會推薦它作為備用或不需用到其主要功能時的主力編輯器。
 
--   [**Byword**](https://bywordapp.com)：非開源，售價為新台幣190元，推薦這個軟體的原因是iOS上缺乏夠好的開源編輯器，但許多人還是會有行動裝置的工作需求（Android應該會有比較多不錯用的Markdown開源編輯器，但我沒涉略）。Byword最主要是因應Apple生態系的工作需求，它除了可以用iCloud空間作為資料床外，也可與多種雲端空間同步，編輯功能也非常完整，推薦愛吃蘋果的阿迪仔與阿咩仔使用。我個人則是使用另一款同樣支援iCloud空間作為資料床的[Pretext](https://apps.apple.com/app/pretext/id1347707000)（非開源、基本功能免費），推薦給跟我一樣覺得能用就好的人。
+-   [**Byword**](https://bywordapp.com)：非開源，售價為新台幣190元，推薦這個軟體的原因是iOS上缺乏夠好的開源編輯器（Android應該會有比較多不錯用的開源編輯器，但我沒涉略）。它因應了Apple生態系的工作需求，除了可以存取iCloud檔案夾（這很重要！很多app都是做軟體內的封閉式同步），編輯功能也非常完整，推薦愛吃蘋果的阿迪仔與阿咩仔使用。我個人則是使用另一款同樣可以存取iCloud檔案夾的[Pretext](https://apps.apple.com/app/pretext/id1347707000)（非開源、基本功能免費），推薦給覺得能用就好的人。
 
 [^9]: SPSS全稱為Statistical Package for the Social Sciences，是IBM所推出的又弱又貴的統計軟體，詳見[SPSS](http://www.ibm.com/analytics/us/en/technology/spss/)。
 
-[^10]: Rmarkdown是RStudio基於整合研究與書寫流程，以Markdown為基礎，所推出的套件功能，詳見[Rmarkdown](https://rmarkdown.rstudio.com)。
+[^10]: Rmarkdown是RStudio以Markdown為基礎，用以整合研究與書寫流程的功能套件，詳見[Rmarkdown](https://rmarkdown.rstudio.com)。
 
-[^11]: Zotero是一個開源的文獻管理軟體專案，擁有許多實用的外掛。目前的Beta版帶有強大的筆記功能，並預計於不久後推出iOS版本，詳見[Zotero](https://www.zotero.org)。
+[^11]: Zotero是一個開源的文獻管理軟體專案，擁有許多實用的外掛。目前的Beta版帶有強大的筆記功能，預計於不久後也會推出iOS版本，詳見[Zotero](https://www.zotero.org)。
 
-[^12]: 卡片盒（Zettelkasten）是提出社會系統理論的德國學者Niklas Luhemann生前使用的筆記法，最近諸多紅到發紫的筆記軟體都是以其網絡化的概念來設計。但其實此種筆記法需要有非常嚴謹的層級規範，並非許多中文教學文章所述，不斷紀錄和連結就可以變得跟他大佬一樣聰明伶俐。是一種門檻極高的筆記方式，不推薦各位朋友使用。
+[^12]: 卡片盒（Zettelkasten）是提出社會系統理論、致力於社會風險管理的德國學者Niklas Luhemann，生前使用的筆記法。最近有許多紅到發紫的筆記軟體都是以這種網絡化筆記的概念來設計。但其實此種筆記法需要有非常嚴謹的層級規範配合，才能有效控制雜訊，並非許多中文教學文章所述，不斷紀錄和連結就可以變得跟他大佬一樣聰明俐落。是一種門檻極高的筆記方式，不推薦各位朋友使用。
 
 #### 標題
 
