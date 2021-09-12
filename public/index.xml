@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-TW</language>
         <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hazukagi.sintaika.com/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>源稿の標準</title>
+        <title>源稿の技術文件</title>
         <link>https://hazukagi.sintaika.com/p/source-text-note/</link>
         <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
         
         <guid>https://hazukagi.sintaika.com/p/source-text-note/</guid>
-        <description>&lt;img src="https://hazukagi.sintaika.com/p/source-text-note/Unknown.jpg" alt="Featured image of post 源稿の標準" /&gt;&lt;p&gt;本站是透過R&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;的Blogdown&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;轉換文件中的標記語言後，再以Hugo&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;模板渲染為網頁文章。本文首先將說明此架構下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。本文僅供編輯人員參考，受邀作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），唯需注意第二部分格式說明當中的建議。&lt;/p&gt;
-&lt;h2 id=&#34;標記語言&#34;&gt;標記語言&lt;/h2&gt;
+        <description>&lt;img src="https://hazukagi.sintaika.com/p/source-text-note/Unknown.jpg" alt="Featured image of post 源稿の技術文件" /&gt;&lt;p&gt;本站是透過R&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;的Blogdown&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;轉換文件中的標記語言後，再以Hugo&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;模板渲染為網頁文章。本文首先將說明此架構下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。本文僅供編輯人員參考，受邀作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），唯需注意第二部分格式說明當中的建議。&lt;/p&gt;
+&lt;h2 id=&#34;第一部分標記語言&#34;&gt;第一部分｜標記語言&lt;/h2&gt;
 &lt;p&gt;Markdown&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;直覺的標記方式，除了免去如Word檔等所見即所得文件（WYSIWYG）的各種格式錯誤，省下書寫時所浪費的格式調整時間，也讓使用者的書寫得以從Google或Microsoft等企業所提供的封閉式辦公文件當中解放，輕鬆進行轉換與渲染，銜接各種工作流程。本站使用的R套件Blogdown即是一個以Markdown為基礎的靜態網頁環境，使用者可以直接將具有Markdown標記的平面文件轉換為網頁貼文。&lt;/p&gt;
 &lt;p&gt;Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。除了支援KaTex&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;數學公式，Hugo也提供Shortcode&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;管理所引用的參考文獻。&lt;/p&gt;
 &lt;p&gt;本節將依先來後到分為通用的Markdown標記語法與Blogdown（含Hugo）的特殊語法功能等兩部分，簡單介紹以上所提的標記法與顯示效果。若需要更詳細的資訊，建議參考Blogdown開發者謝益輝所著的專書&lt;a class=&#34;link&#34; href=&#34;https://bookdown.org/yihui/blogdown/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -24,7 +24,7 @@
 &lt;p&gt;或許一開始在學的時候會因為超級折騰，而放棄純文本回去用WYSIWYG。一方面，這只能取決於每個人在內容生產上不被綁架的信念有多深；另一方面，其實這種折騰只是在一種末日預期下&amp;mdash;&amp;mdash;沒有軟體支援、甚至是電力支援&amp;mdash;&amp;mdash;建立進可攻退可守的多元媒介工作流程的前哨戰而已。本文僅在這裡給一劑進入Markdown世界前的預防針，畢竟被卡車撞這種事情也不是每個人都會發生。最後，請善用&lt;a class=&#34;link&#34; href=&#34;https://duckduckgo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Duckduckgo&lt;/a&gt;或&lt;a class=&#34;link&#34; href=&#34;https://www.startpage.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Startpage&lt;/a&gt;等搜尋引擎（不推薦賣個資又養套殺使用者的Google）或各編輯器所提供的說明文件來學習，本文不再贅述。&lt;/p&gt;
-&lt;h4 id=&#34;編輯器&#34;&gt;編輯器&lt;/h4&gt;
+&lt;h4 id=&#34;開源編輯器推薦&#34;&gt;開源編輯器推薦&lt;/h4&gt;
 &lt;p&gt;網路上已有不少對Markdown編輯器的推薦，許多筆記軟體如&lt;a class=&#34;link&#34; href=&#34;https://www.notion.so/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Notion&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://evernote.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Evernote&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://roamresearch.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -53,46 +53,74 @@
     &gt;Pretext&lt;/a&gt;（非開源、基本功能免費），推薦給覺得能用就好的人。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;標題&#34;&gt;標題&lt;/h4&gt;
-&lt;p&gt;不管是哪一種類型的文本，標題層級絕對可以說是最重要的功能。但在Word等WYSIWYG文件當中，常常會因為「看起來像」的原因，而讓使用者混淆內文與標題的格式設定，在Markdown標記中則不常發生這種狀況。（試想你要把內文加粗、放大，並且得到和渲染後的某層標題一樣的字型和顏色效果的話，要加多少標記呢？）&lt;/p&gt;
-&lt;p&gt;在Markdown文件當中，第一級標題通常就代表整份文件的大標，第二級之後才是內文各章節的標題。但依編輯器與轉換設定的不同，渲染規則也會有些許差異。例如，使用RStudio時，如果將文本類型指定為rtical（如ctexart）或是使用bookdown（如ctexbook）時，第一級標題便會是各章節的標題，而文件的大標則會儲存在YAML當中；Blogdown雖然也將大標儲存在YAML中，但內文則遵循一般的標題規則，若在內文使用第一集標題的話，雖然會顯示其格式，但目錄表會忽略不計。特例的部分就只能請各位跟編輯器好好培養感情，理解自己常用的格式及渲染的效果了，以下將介紹一般的標記規則。&lt;/p&gt;
-&lt;p&gt;標題的標記方式為：在行頭以&lt;code&gt;#&lt;/code&gt;符號註記，並在空格後輸入標題文字，如&lt;code&gt;# 標題文字&lt;/code&gt;。&lt;code&gt;#&lt;/code&gt;符號的數量對應標題的層級，一般的Markdown提供有六層的標題記號。以下示範標註方式，並展示渲染後的範例。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;# 第一級標題&lt;/code&gt;&lt;/p&gt;
-&lt;h1 id=&#34;第一級標題&#34;&gt;第一級標題&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;## 第二級標題&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;第二級標題&#34;&gt;第二級標題&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;### 第三級標題&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;第三級標題&#34;&gt;第三級標題&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;#### 第四級標題&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;第四級標題&#34;&gt;第四級標題&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;##### 第五級標題&lt;/code&gt;&lt;/p&gt;
-&lt;h5 id=&#34;第五級標題&#34;&gt;第五級標題&lt;/h5&gt;
-&lt;p&gt;&lt;code&gt;###### 第六級標題&lt;/code&gt;&lt;/p&gt;
-&lt;h6 id=&#34;第六級標題&#34;&gt;第六級標題&lt;/h6&gt;
-&lt;p&gt;透過以上的展示，可以看到第四級之後的標題文字漸漸變得比段落字體還小。因此，除非有特別調整渲染格式，一般Markdown文本在輸出為HTML時，文章結構不建議超過四級。&lt;/p&gt;
-&lt;h4 id=&#34;段落&#34;&gt;段落&lt;/h4&gt;
-&lt;h4 id=&#34;粗體&#34;&gt;粗體&lt;/h4&gt;
-&lt;h4 id=&#34;斜體&#34;&gt;斜體&lt;/h4&gt;
-&lt;h4 id=&#34;註腳&#34;&gt;註腳&lt;/h4&gt;
-&lt;h4 id=&#34;引文&#34;&gt;引文&lt;/h4&gt;
-&lt;h4 id=&#34;表格&#34;&gt;表格&lt;/h4&gt;
-&lt;h4 id=&#34;程式碼&#34;&gt;程式碼&lt;/h4&gt;
-&lt;h4 id=&#34;列表&#34;&gt;列表&lt;/h4&gt;
-&lt;h4 id=&#34;連結&#34;&gt;連結&lt;/h4&gt;
-&lt;h4 id=&#34;圖片&#34;&gt;圖片&lt;/h4&gt;
-&lt;h4 id=&#34;跳脫字元&#34;&gt;跳脫字元&lt;/h4&gt;
+&lt;h4 id=&#34;語法說明與顯示效果&#34;&gt;語法說明與顯示效果&lt;/h4&gt;
+&lt;p&gt;Markdown並非艱深困難的語法，它僅僅是區塊與區段的標記語言，學習時間與記憶成本非常低，直接使用是習慣它的最快方法。以下推薦先閱讀Markdown的基本語法規則，並配合本站的Hugo模板所提供的範例，參考顯示效果（基於Blogdown的轉換，Other Elements的Hugo標記元素是失效的）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.tw&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown語法說明&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hazukagi.sintaika.com/p/markdown-syntax-guide/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown Syntax Guide&lt;/a&gt;（顯示效果）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/markdown-syntax/index.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown Syntax Guide&lt;/a&gt;（Markdown）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;blogdown&#34;&gt;Blogdown&lt;/h3&gt;
-&lt;h4 id=&#34;mathematical&#34;&gt;Mathematical&lt;/h4&gt;
+&lt;p&gt;如上一小節所示，Markdown的基本標記語法僅能提供平面書寫的需求，而網頁貼文其實還包含了插入YouTube影片或社群網站內容等多媒體需求。在傳統的Markdown書寫當中，會直接以HTML語言來補充，但既然我們都使用Blogdown套件了，那這些功能當然也是要以更簡潔的語法方案來取代嘍。&lt;/p&gt;
+&lt;p&gt;雖然說本站所使用的語法集是由R套件Blogdown所提供，但其實除了Shortcode及R code之外，大部分允許使用Pandoc轉換的編輯器都有提供對KaTex及BibTex的支援。所以，如果你使用的編輯器並非RStudio也不必太過擔心。&lt;/p&gt;
 &lt;h4 id=&#34;shortcode&#34;&gt;Shortcode&lt;/h4&gt;
-&lt;h5 id=&#34;youtube&#34;&gt;Youtube&lt;/h5&gt;
-&lt;h5 id=&#34;vimeo&#34;&gt;Vimeo&lt;/h5&gt;
-&lt;h5 id=&#34;instagram&#34;&gt;Instagram&lt;/h5&gt;
-&lt;h5 id=&#34;tweet&#34;&gt;Tweet&lt;/h5&gt;
+&lt;p&gt;Shortcode是由Hugo靜態網頁架構提供，藉此補充Markdown標記語法對HTML支援的不足之處。因此，Hugo的Shortcode其實是一組對應到所有HTML的語法支援，而大部分的基礎書寫語法、插入圖片及超連結語法等已有Markdown語法的支持，因此，此小節僅需理解YouTube及Vimo等多媒體影片的插入，以及對Tweet或Instagram等社群貼文的顯示語法，官方說明文件及本站模板示例如下。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Shortcodes | Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hazukagi.sintaika.com/p/rich-content/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Rich Content&lt;/a&gt;（顯示效果）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/rich-content/index.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Rich Content&lt;/a&gt;（Markdown）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h4 id=&#34;r-code&#34;&gt;R code&lt;/h4&gt;
-&lt;h4 id=&#34;bibliography&#34;&gt;Bibliography&lt;/h4&gt;
-&lt;h2 id=&#34;格式說明&#34;&gt;格式說明&lt;/h2&gt;
+&lt;p&gt;R code部分包含了R統計學的操作方法，各位或許不太用得上，但本站希望未來可以收錄各種可重製研究的文章，因此特別給了它一個小小位置，對統計或數據科學有興趣的朋友可藉此機會瞭解RMarkdown的趣味所在。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://rmarkdown.rstudio.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;RMarkdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mathematical&#34;&gt;Mathematical&lt;/h4&gt;
+&lt;p&gt;如上一小節所示，原生的Markdown並不支援數學公式的顯示。但由於學術書寫的需求逐漸拓及Markdown的領域，於是依附於Pandoc強大轉換能力的編輯器一一出現，它們借助於KaTex語法有效地顯示各種數學符號及其在公式當中的相對位置，KaTex的技術文件及本站模板示例如下。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://katex.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KaTex&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hazukagi.sintaika.com/p/math-typesetting/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Math Typesetting&lt;/a&gt;（顯示效果）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/math-typesetting/index.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Math Typesetting&lt;/a&gt;（Markdown）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;bibliographic&#34;&gt;Bibliographic&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.bibtex.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;BibTex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;第二部分格式說明&#34;&gt;第二部分｜格式說明&lt;/h2&gt;
 &lt;h3 id=&#34;文章結構&#34;&gt;文章結構&lt;/h3&gt;
 &lt;h3 id=&#34;層級安排&#34;&gt;層級安排&lt;/h3&gt;
+&lt;p&gt;不管是哪一種類型的文本，標題層級絕對可以說是最重要的功能。但在Word等WYSIWYG文件當中，常常會因為「看起來像」的原因，而讓使用者混淆內文與標題的格式設定，在Markdown標記中則不常發生這種狀況。（試想你要把內文加粗、放大，並且得到和渲染後的某層標題一樣的字型和顏色效果的話，要加多少標記呢？）&lt;/p&gt;
+&lt;p&gt;在Markdown文件當中，第一級標題通常就代表整份文件的大標，第二級之後才是內文各章節的標題。但依編輯器與轉換設定的不同，渲染規則也會有些許差異。例如，使用RStudio時，如果將文本類型指定為rtical（如ctexart）或是使用bookdown（如ctexbook）時，第一級標題便會是各章節的標題，而文件的大標則會儲存在YAML當中；Blogdown雖然也將大標儲存在YAML中，但內文則遵循一般的標題規則，若在內文使用第一集標題的話，雖然會顯示其格式，但目錄表會忽略不計。特例的部分就只能請各位跟編輯器好好培養感情，理解自己常用的格式及渲染的效果了。&lt;/p&gt;
+&lt;p&gt;標題的標記方式為：在行頭以&lt;code&gt;#&lt;/code&gt;符號註記，並在空格後輸入標題文字，如&lt;code&gt;# 標題文字&lt;/code&gt;。&lt;code&gt;#&lt;/code&gt;符號的數量對應標題的層級，一般的Markdown提供有六層的標題記號。但透過以上的展示，可以看到第四級之後的標題文字漸漸變得比段落字體還小。因此，除非有特別調整渲染格式，一般Markdown文本在輸出為HTML時，文章結構不建議超過四級。&lt;/p&gt;
 &lt;h3 id=&#34;引用格式&#34;&gt;引用格式&lt;/h3&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -118,13 +146,13 @@
     &gt;Pandoc Markdown&lt;/a&gt;。&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;KaTex是Tex文本排版系統的數學公式支援，Tex由Donald Ervin Knuth開發用於學術寫作，KaTex在目前某些開發較完整的Markdown編輯器中作為數學公式的補充標記語言。&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;KaTex是一種支援LaTex與網頁顯示的數學公式支援，KaTex在目前某些開發較完整的Markdown編輯器中作為數學公式的補充標記語言。&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;Shortcode是Hugo用以補充Markdown無法在渲染後的頁面顯示多媒體的語法延伸方案。&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;BibTex是與Tex作為引用文獻資料的標記文本格式，也是目前許多Markdown編輯器處理引用文獻的主流格式，詳見&lt;a class=&#34;link&#34; href=&#34;http://www.bibtex.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;BibTex是一種與LaTex配合，作為引用文獻資料的標記文本格式，也是目前許多Markdown編輯器處理引用文獻的主流格式，詳見&lt;a class=&#34;link&#34; href=&#34;http://www.bibtex.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;BibTex.org&lt;/a&gt;。&amp;#160;&lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:9&#34; role=&#34;doc-endnote&#34;&gt;
@@ -383,37 +411,6 @@
 &lt;div class=&#34;play&#34;&gt;&lt;svg version=&#34;1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 61 61&#34;&gt;&lt;circle cx=&#34;30.5&#34; cy=&#34;30.5&#34; r=&#34;30.5&#34; opacity=&#34;.8&#34; fill=&#34;#000&#34;&gt;&lt;/circle&gt;&lt;path d=&#34;M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z&#34; fill=&#34;#fff&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</description>
         </item>
         <item>
-        <title>Placeholder Text</title>
-        <link>https://hazukagi.sintaika.com/p/placeholder-text/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://hazukagi.sintaika.com/p/placeholder-text/</guid>
-        <description>&lt;img src="https://hazukagi.sintaika.com/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
-&lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
-&lt;li&gt;Duce pollice&lt;/li&gt;
-&lt;li&gt;Eris modo&lt;/li&gt;
-&lt;li&gt;Spargitque ferrea quos palude&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Comas hunc haec pietate fetum procerum dixit&lt;/li&gt;
-&lt;li&gt;Post torum vates letum Tiresia&lt;/li&gt;
-&lt;li&gt;Flumen querellas&lt;/li&gt;
-&lt;li&gt;Arcanaque montibus omnes&lt;/li&gt;
-&lt;li&gt;Quidem et&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;vagus-elidunt&#34;&gt;Vagus elidunt&lt;/h1&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;The Van de Graaf Canon&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;mane-refeci-capiebant-unda-mulcebat&#34;&gt;Mane refeci capiebant unda mulcebat&lt;/h2&gt;
-&lt;p&gt;Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong&gt;Faces illo pepulere&lt;/strong&gt; tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p&gt;
-&lt;p&gt;Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p&gt;
-&lt;p&gt;Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong&gt;mitis temploque&lt;/strong&gt; vocatus, inque alis, &lt;em&gt;oculos nomen&lt;/em&gt; non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong&gt;parte&lt;/strong&gt;.&lt;/p&gt;</description>
-        </item>
-        <item>
         <title>Math Typesetting</title>
         <link>https://hazukagi.sintaika.com/p/math-typesetting/</link>
         <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
@@ -444,27 +441,6 @@
 $$
 \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
 $$&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>Emoji Support</title>
-        <link>https://hazukagi.sintaika.com/p/emoji-support/</link>
-        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://hazukagi.sintaika.com/p/emoji-support/</guid>
-        <description>&lt;img src="https://hazukagi.sintaika.com/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
-&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/configuration/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;http://www.emoji-cheat-sheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Emoji cheat sheet&lt;/a&gt; is a useful reference for emoji shorthand codes.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;N.B.&lt;/strong&gt; The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;.emoji {
-  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         
     </channel>
