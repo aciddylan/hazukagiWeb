@@ -20,7 +20,9 @@ hidden: no
 comments: yes
 ---
 
-本站是透過R[^1]的Blogdown[^2]套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc[^3]轉換文件中的標記語言後，再以Hugo[^4]模板渲染為網頁文章。本文首先將說明此架構下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。本文僅供編輯人員參考，受邀作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），唯需注意第二部分格式說明當中的建議。
+本站是透過R[^1]的Blogdown[^2]套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc[^3]轉換文件中的標記語言後，再以Hugo[^4]模板渲染為網頁文章。本文首先將說明此架構下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。
+
+本文僅供對Markdown完全沒有概念的朋友參考，有Markdown使用經驗的朋友可以略過第一部分的說明，唯需注意第二部分格式說明當中的建議。另外，本站並不強迫受邀作者繳交Markdown文件，作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），但也請稍加注意書寫的格式說明，本站會在收到稿件後交由編輯處理。
 
 [^1]: R是一套運用於統計的開發環境，具有非常活潑的開發生態。透過開發者的集體努力，R有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各種類型的研究報告。詳見[*The R Project for Statistical Computing*](https://www.r-project.org)*。*
 
@@ -92,6 +94,48 @@ Markdown並非艱深困難的語法，它僅僅是區塊與區段的標記語言
 
 雖然說本站所使用的語法集是由R套件Blogdown所提供，但其實除了Shortcode及R code之外，大部分允許使用Pandoc轉換的編輯器都有提供對KaTex及BibTex的支援。所以，如果你使用的編輯器並非RStudio也不必太過擔心。
 
+#### YAML
+
+在開始介紹Blogdown可以運用的語法前，必須先介紹一個叫做YAML[^13]的東東。這個YAML是儲存文件元數據（metadata）的區塊，一般會置於文件開頭，用以描述檔案性質或是用於寫入特定程式功能執行的指示，資訊內容可以包含標題、簡述、日期時間、語言類型、標籤、⋯⋯等對應到HTML語言的基本資訊；另外也有配合編輯器或Pandoc的特殊格式，例如：書目資訊、渲染格式、程式碼模式、⋯⋯等功能。本站在Blogdown架構下的YAML以本篇為例：
+
+[^13]: YAML是一種序列化的格式語言，常見於網站構建及資料庫的描述等用途上，也是目前Markdown文本儲存元數據的主要格式，參見[yaml.org](https://yaml.org)。
+
+```
+title: 源稿の技術文件
+author: 陳奕達
+date: '2021-09-09'
+slug: source-text-note
+categories:
+  - themes
+  - syntax
+tags:
+  - themes
+  - markdown
+  - shortcodes
+  - html
+  - text
+description: 所有貼文技術的東東都在這裡。
+image: Unknown.jpg
+math: ~
+license: ~
+hidden: no
+comments: yes
+```
+
+文章所儲存的元數據包含了`title`、`author`、`date`、`categories`、`tags`和`description`等較直覺的資訊，本文不另外說明，其他項目則說明如下：
+
+- `slug`：指定文件生成的永久檔名。
+
+- `image`：指定文件的封面圖片，本文的圖片檔名為`Unknown.jpg`，置於文件同一目錄下。
+
+- `math`：指定是否以KaTex顯示數學公式，`~`代表預設值開啟。
+
+- `license`：指定文件的授權方式，預設值為 CC-by-nc-sa 4.0。
+
+- `hidden`：指定文章是否隱藏。
+
+- `comments`：指定是否開放用戶評論文章的外掛模組，本站使用的模組為[Disqus](https://disqus.com)提供。
+
 #### Shortcode
 
 Shortcode是由Hugo靜態網頁架構提供，藉此補充Markdown標記語法對HTML支援的不足之處。因此，Hugo的Shortcode其實是一組對應到所有HTML的語法支援，而大部分的基礎書寫語法、插入圖片及超連結語法等已有Markdown語法的支持，此小節僅需理解YouTube及Vimo等多媒體影片的插入，以及對Tweet或Instagram等社群貼文的顯示語法，官方說明文件及本站模板示例如下。
@@ -119,6 +163,12 @@ R code部分包含了R統計學的操作方法，各位或許不太用得上，�
 - [Math Typesetting](https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/math-typesetting/index.md)（Markdown）
 
 #### Bibliographic
+
+與數學公式一樣，書目引用的支援也來自於漸漸形成的Markdown學術寫作需求。雖然書目引用同樣可以透過手動的方式來加入（相信各位研究生們都很在行），但Pandoc同樣也具有對BibTex的格式支援，並且可以透過CSL[^14]渲染為指定的引用樣式。這些功能在許多編輯器裡當然是不會缺席的，甚至還有編輯器提供了對Zotero的直接支援（例如本文介紹的RStudio和Zettlr都支援Zotero），從Zotero直接引用後就自動生成BibTex文件。
+
+[^14]: CSL是一種引用格式語言，廣泛用於Zotero及[Mendeley](https://www.mendeley.com/)等文獻管理軟體或支援BibTex文件的編輯軟體中，在西方世界有許多期刊文獻除了說明格式之外，也會釋出CSL檔案供作者使用，可惜的是台灣尚未習慣運用這些工具，參見[Citation Style Language](https://citationstyles.org)。
+
+本站的Blogdown架構自然也是支援這種引用方式的。只要將BibTex文件與Markdown文本放在同一資料夾下，並在YAML當中指定BibTex文件的檔名，即可渲染出引用的格式。那由於本站模板的格式關係，比起APA等行內引用格式，會較為適合運用註腳的引用格式。未來將會釋出一篇貼文，示範本站的引用格式以及CSL的樣式文件，以下僅先提供BibTex的官方網站給各位瞭解。
 
 - [BibTex](http://www.bibtex.org)
 
