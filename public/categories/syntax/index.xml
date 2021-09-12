@@ -34,7 +34,7 @@ Markdown Markdown是一種簡潔的標記語言，是目前主流的純文本標
   Blogdown 如上一小節所示，Markdown的基本標記語法僅能提供平面書寫的需求，而網頁貼文其實還包含了插入YouTube影片或社群網站內容等多媒體需求。在傳統的Markdown書寫當中，會直接以HTML語言來補充，但既然我們都使用Blogdown套件了，那這些功能當然也是要以更簡潔的語法方案來取代嘍。
 雖然說本站所使用的語法集是由R套件Blogdown所提供，但其實除了Shortcode及R code之外，大部分允許使用Pandoc轉換的編輯器都有提供對KaTex及BibTex的支援。所以，如果你使用的編輯器並非RStudio也不必太過擔心。
 YAML 在開始介紹Blogdown可以運用的語法前，必須先介紹一個叫做YAML13的東東。這個YAML是儲存文件元數據（metadata）的區塊，一般會置於文件開頭，用以描述檔案性質或是用於寫入特定程式功能執行的指示，資訊內容可以包含標題、簡述、日期時間、語言類型、標籤、⋯⋯等對應到HTML語言的基本資訊；另外也有配合編輯器或Pandoc的特殊格式，例如：書目資訊、渲染格式、程式碼模式、⋯⋯等功能。本站在Blogdown架構下的YAML以本篇為例：
-title: 源稿の技術文件 author: 陳奕達 date: &#39;2021-09-09&#39; slug: source-text-note categories: - themes - syntax tags: - themes - markdown - shortcodes - html - text description: 所有貼文技術的東東都在這裡。 image: Unknown.</description>
+title:源稿の技術文件author:陳奕達date:&amp;#39;2021-09-09&amp;#39;slug:source-text-notecategories:- themes- syntaxtags:- themes- markdown- shortcodes- html- textdescription:所有貼文技術的東東都在這裡。image:Unknown.</description>
     </item>
     
     <item>

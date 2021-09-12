@@ -195,26 +195,26 @@
 <p>雖然說本站所使用的語法集是由R套件Blogdown所提供，但其實除了Shortcode及R code之外，大部分允許使用Pandoc轉換的編輯器都有提供對KaTex及BibTex的支援。所以，如果你使用的編輯器並非RStudio也不必太過擔心。</p>
 <h4 id="yaml">YAML</h4>
 <p>在開始介紹Blogdown可以運用的語法前，必須先介紹一個叫做YAML<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>的東東。這個YAML是儲存文件元數據（metadata）的區塊，一般會置於文件開頭，用以描述檔案性質或是用於寫入特定程式功能執行的指示，資訊內容可以包含標題、簡述、日期時間、語言類型、標籤、⋯⋯等對應到HTML語言的基本資訊；另外也有配合編輯器或Pandoc的特殊格式，例如：書目資訊、渲染格式、程式碼模式、⋯⋯等功能。本站在Blogdown架構下的YAML以本篇為例：</p>
-<pre><code>title: 源稿の技術文件
-author: 陳奕達
-date: '2021-09-09'
-slug: source-text-note
-categories:
-  - themes
-  - syntax
-tags:
-  - themes
-  - markdown
-  - shortcodes
-  - html
-  - text
-description: 所有貼文技術的東東都在這裡。
-image: Unknown.jpg
-math: ~
-license: ~
-hidden: no
-comments: yes
-</code></pre><p>文章所儲存的元數據包含了<code>title</code>、<code>author</code>、<code>date</code>、<code>categories</code>、<code>tags</code>和<code>description</code>等較直覺的資訊，本文不另外說明，其他項目則說明如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">源稿の技術文件</span><span class="w">
+</span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l">陳奕達</span><span class="w">
+</span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;2021-09-09&#39;</span><span class="w">
+</span><span class="w"></span><span class="nt">slug</span><span class="p">:</span><span class="w"> </span><span class="l">source-text-note</span><span class="w">
+</span><span class="w"></span><span class="nt">categories</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="l">themes</span><span class="w">
+</span><span class="w">  </span>- <span class="l">syntax</span><span class="w">
+</span><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="l">themes</span><span class="w">
+</span><span class="w">  </span>- <span class="l">markdown</span><span class="w">
+</span><span class="w">  </span>- <span class="l">shortcodes</span><span class="w">
+</span><span class="w">  </span>- <span class="l">html</span><span class="w">
+</span><span class="w">  </span>- <span class="l">text</span><span class="w">
+</span><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">所有貼文技術的東東都在這裡。</span><span class="w">
+</span><span class="w"></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">Unknown.jpg</span><span class="w">
+</span><span class="w"></span><span class="nt">math</span><span class="p">:</span><span class="w"> </span><span class="l">~</span><span class="w">
+</span><span class="w"></span><span class="nt">license</span><span class="p">:</span><span class="w"> </span><span class="l">~</span><span class="w">
+</span><span class="w"></span><span class="nt">hidden</span><span class="p">:</span><span class="w"> </span><span class="kc">no</span><span class="w">
+</span><span class="w"></span><span class="nt">comments</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span></code></pre></div><p>文章所儲存的元數據包含了<code>title</code>、<code>author</code>、<code>date</code>、<code>categories</code>、<code>tags</code>和<code>description</code>等較直覺的資訊，本文不另外說明，其他項目則說明如下：</p>
 <ul>
 <li>
 <p><code>slug</code>：指定文件生成的永久檔名。</p>
