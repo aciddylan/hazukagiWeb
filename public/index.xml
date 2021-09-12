@@ -12,7 +12,8 @@
         <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
         
         <guid>https://hazukagi.sintaika.com/p/source-text-note/</guid>
-        <description>&lt;img src="https://hazukagi.sintaika.com/p/source-text-note/Unknown.jpg" alt="Featured image of post 源稿の技術文件" /&gt;&lt;p&gt;本站是透過R&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;的Blogdown&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;轉換文件中的標記語言後，再以Hugo&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;模板渲染為網頁文章。本文首先將說明此架構下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。本文僅供編輯人員參考，受邀作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），唯需注意第二部分格式說明當中的建議。&lt;/p&gt;
+        <description>&lt;img src="https://hazukagi.sintaika.com/p/source-text-note/Unknown.jpg" alt="Featured image of post 源稿の技術文件" /&gt;&lt;p&gt;本站是透過R&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;的Blogdown&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;轉換文件中的標記語言後，再以Hugo&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;模板渲染為網頁文章。本文首先將說明此架構下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。&lt;/p&gt;
+&lt;p&gt;本文僅供對Markdown完全沒有概念的朋友參考，有Markdown使用經驗的朋友可以略過第一部分的說明，唯需注意第二部分格式說明當中的建議。另外，本站並不強迫受邀作者繳交Markdown文件，作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），但也請稍加注意書寫的格式說明，本站會在收到稿件後交由編輯處理。&lt;/p&gt;
 &lt;h2 id=&#34;第一部分標記語言&#34;&gt;第一部分｜標記語言&lt;/h2&gt;
 &lt;p&gt;Markdown&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;直覺的標記方式，除了免去如Word檔等所見即所得文件（WYSIWYG）的各種格式錯誤，省下書寫時所浪費的格式調整時間，也讓使用者的書寫得以從Google或Microsoft等企業所提供的封閉式辦公文件當中解放，輕鬆進行轉換與渲染，銜接各種工作流程。本站使用的R套件Blogdown即是一個以Markdown為基礎的靜態網頁環境，使用者可以直接將具有Markdown標記的平面文件轉換為網頁貼文。&lt;/p&gt;
 &lt;p&gt;Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。除了支援KaTex&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;數學公式，Hugo也提供Shortcode&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;管理所引用的參考文獻。&lt;/p&gt;
@@ -72,6 +73,49 @@
 &lt;h3 id=&#34;blogdown&#34;&gt;Blogdown&lt;/h3&gt;
 &lt;p&gt;如上一小節所示，Markdown的基本標記語法僅能提供平面書寫的需求，而網頁貼文其實還包含了插入YouTube影片或社群網站內容等多媒體需求。在傳統的Markdown書寫當中，會直接以HTML語言來補充，但既然我們都使用Blogdown套件了，那這些功能當然也是要以更簡潔的語法方案來取代嘍。&lt;/p&gt;
 &lt;p&gt;雖然說本站所使用的語法集是由R套件Blogdown所提供，但其實除了Shortcode及R code之外，大部分允許使用Pandoc轉換的編輯器都有提供對KaTex及BibTex的支援。所以，如果你使用的編輯器並非RStudio也不必太過擔心。&lt;/p&gt;
+&lt;h4 id=&#34;yaml&#34;&gt;YAML&lt;/h4&gt;
+&lt;p&gt;在開始介紹Blogdown可以運用的語法前，必須先介紹一個叫做YAML&lt;sup id=&#34;fnref:13&#34;&gt;&lt;a href=&#34;#fn:13&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;13&lt;/a&gt;&lt;/sup&gt;的東東。這個YAML是儲存文件元數據（metadata）的區塊，一般會置於文件開頭，用以描述檔案性質或是用於寫入特定程式功能執行的指示，資訊內容可以包含標題、簡述、日期時間、語言類型、標籤、⋯⋯等對應到HTML語言的基本資訊；另外也有配合編輯器或Pandoc的特殊格式，例如：書目資訊、渲染格式、程式碼模式、⋯⋯等功能。本站在Blogdown架構下的YAML以本篇為例：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title: 源稿の技術文件
+author: 陳奕達
+date: &#39;2021-09-09&#39;
+slug: source-text-note
+categories:
+  - themes
+  - syntax
+tags:
+  - themes
+  - markdown
+  - shortcodes
+  - html
+  - text
+description: 所有貼文技術的東東都在這裡。
+image: Unknown.jpg
+math: ~
+license: ~
+hidden: no
+comments: yes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;文章所儲存的元數據包含了&lt;code&gt;title&lt;/code&gt;、&lt;code&gt;author&lt;/code&gt;、&lt;code&gt;date&lt;/code&gt;、&lt;code&gt;categories&lt;/code&gt;、&lt;code&gt;tags&lt;/code&gt;和&lt;code&gt;description&lt;/code&gt;等較直覺的資訊，本文不另外說明，其他項目則說明如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;slug&lt;/code&gt;：指定文件生成的永久檔名。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;image&lt;/code&gt;：指定文件的封面圖片，本文的圖片檔名為&lt;code&gt;Unknown.jpg&lt;/code&gt;，置於文件同一目錄下。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;math&lt;/code&gt;：指定是否以KaTex顯示數學公式，&lt;code&gt;~&lt;/code&gt;代表預設值開啟。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;license&lt;/code&gt;：指定文件的授權方式，預設值為 CC-by-nc-sa 4.0。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;hidden&lt;/code&gt;：指定文章是否隱藏。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;comments&lt;/code&gt;：指定是否開放用戶評論文章的外掛模組，本站使用的模組為&lt;a class=&#34;link&#34; href=&#34;https://disqus.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Disqus&lt;/a&gt;提供。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h4 id=&#34;shortcode&#34;&gt;Shortcode&lt;/h4&gt;
 &lt;p&gt;Shortcode是由Hugo靜態網頁架構提供，藉此補充Markdown標記語法對HTML支援的不足之處。因此，Hugo的Shortcode其實是一組對應到所有HTML的語法支援，而大部分的基礎書寫語法、插入圖片及超連結語法等已有Markdown語法的支持，此小節僅需理解YouTube及Vimo等多媒體影片的插入，以及對Tweet或Instagram等社群貼文的顯示語法，官方說明文件及本站模板示例如下。&lt;/p&gt;
 &lt;ul&gt;
@@ -111,6 +155,8 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;bibliographic&#34;&gt;Bibliographic&lt;/h4&gt;
+&lt;p&gt;與數學公式一樣，書目引用的支援也來自於漸漸形成的Markdown學術寫作需求。雖然書目引用同樣可以透過手動的方式來加入（相信各位研究生們都很在行），但Pandoc同樣也具有對BibTex的格式支援，並且可以透過CSL&lt;sup id=&#34;fnref:14&#34;&gt;&lt;a href=&#34;#fn:14&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;14&lt;/a&gt;&lt;/sup&gt;渲染為指定的引用樣式。這些功能在許多編輯器裡當然是不會缺席的，甚至還有編輯器提供了對Zotero的直接支援（例如本文介紹的RStudio和Zettlr都支援Zotero），從Zotero直接引用後就自動生成BibTex文件。&lt;/p&gt;
+&lt;p&gt;本站的Blogdown架構自然也是支援這種引用方式的。只要將BibTex文件與Markdown文本放在同一資料夾下，並在YAML當中指定BibTex文件的檔名，即可渲染出引用的格式。那由於本站模板的格式關係，比起APA等行內引用格式，會較為適合運用註腳的引用格式。未來將會釋出一篇貼文，示範本站的引用格式以及CSL的樣式文件，以下僅先提供BibTex的官方網站給各位瞭解。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.bibtex.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;BibTex&lt;/a&gt;&lt;/li&gt;
@@ -169,6 +215,15 @@
 &lt;/li&gt;
 &lt;li id=&#34;fn:12&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;卡片盒（Zettelkasten）是提出社會系統理論、致力於社會風險管理的德國學者Niklas Luhemann，生前使用的筆記法。最近有許多紅到發紫的筆記軟體都是以這種網絡化筆記的概念來設計。但其實此種筆記法需要有非常嚴謹的層級規範配合，才能有效控制雜訊，並非許多中文教學文章所述，不斷紀錄和連結就可以變得跟他大佬一樣聰明俐落。是一種門檻極高的筆記方式，不推薦各位朋友使用。&amp;#160;&lt;a href=&#34;#fnref:12&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:13&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;YAML是一種序列化的格式語言，常見於網站構建及資料庫的描述等用途上，也是目前Markdown文本儲存元數據的主要格式，參見&lt;a class=&#34;link&#34; href=&#34;https://yaml.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;yaml.org&lt;/a&gt;。&amp;#160;&lt;a href=&#34;#fnref:13&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:14&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;CSL是一種引用格式語言，廣泛用於Zotero及&lt;a class=&#34;link&#34; href=&#34;https://www.mendeley.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mendeley&lt;/a&gt;等文獻管理軟體或支援BibTex文件的編輯軟體中，在西方世界有許多期刊文獻除了說明格式之外，也會釋出CSL檔案供作者使用，可惜的是台灣尚未習慣運用這些工具，參見&lt;a class=&#34;link&#34; href=&#34;https://citationstyles.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Citation Style Language&lt;/a&gt;。&amp;#160;&lt;a href=&#34;#fnref:14&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
