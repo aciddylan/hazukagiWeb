@@ -22,8 +22,6 @@ comments: yes
 
 本站是透過R[^1]的Blogdown[^2]套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc[^3]轉換文件中的標記語言後，再以Hugo[^4]模板渲染為網頁文章。本文首先將說明此架構下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。
 
-本文僅供對Markdown完全沒有概念的朋友參考，有Markdown使用經驗的朋友可以略過第一部分的說明，唯需注意第二部分格式說明當中的建議。另外，本站並不強迫受邀作者繳交Markdown文件，作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），但也請稍加注意書寫的格式說明，本站會在收到稿件後交由編輯處理。
-
 [^1]: R是一套運用於統計的開發環境，具有非常活潑的開發生態。透過開發者的集體努力，R有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各種類型的研究報告。詳見[*The R Project for Statistical Computing*](https://www.r-project.org)*。*
 
 [^2]: 由謝益輝所開發的R套件，詳見[*Blogdown*](https://pkgs.rstudio.com/blogdown/)。
@@ -31,6 +29,8 @@ comments: yes
 [^3]: Pandoc是一個開源的文本轉換工具，Blogdown的文件標記轉換依賴其功能。詳見[Pandoc.org](https://pandoc.org)
 
 [^4]: Blogdown所依賴的靜態網頁架構，詳見[The world's fastest framework for building websites \| Hugo](https://gohugo.io)。
+
+本文僅供對Markdown完全沒有概念的朋友參考，有Markdown使用經驗的朋友可以略過第一部分的說明，唯需注意第二部分格式說明當中的建議。另外，本站並不強迫受邀作者繳交Markdown文件，作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），但也請稍加注意書寫的格式說明，本站會在收到稿件後交由編輯處理。
 
 ## 第一部分｜標記語言
 
@@ -60,15 +60,15 @@ Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法
 
 網路上已有不少對Markdown編輯器的推薦，許多筆記軟體如[Notion](https://www.notion.so/)、[Evernote](https://evernote.com)、[Roam Research](https://roamresearch.com)及[Obsidian](https://obsidian.md)等，都是以Markdown為基礎進行文本的標記與渲染。如果你已經用習慣了以上的軟體，可直接跳過本小節，但如果你是Markdown新手，或是想要開始嘗試開源軟體的話，可以試著瞭解以下所推薦的編輯器。
 
-- [**Atom**](https://atom.io)：GitHub開發的開源程式編輯器，在GitHub的生態系中有相當豐富的外掛。推薦給對Python等程式語言有興趣，或預計會開始學習程式語言的人。
+-   [**Atom**](https://atom.io)：GitHub開發的開源程式編輯器，在GitHub的生態系中有相當豐富的外掛。推薦給對Python等程式語言有興趣，或預計會開始學習程式語言的人。
 
-- [**RStudio**](https://www.rstudio.com)：功能強大的R語言整合開發環境（Integrated Development Environment, IDE），建議還在跑SPSS[^9]的朋友們趕快棄坑，轉投R語言的陣營。RStudio的生態系除了擁有各種強大的統計功能套件外，圍繞著Rmarkdown[^10]套件的書寫生態也相當豐富（並有支援Zotero[^11]），整合了資料蒐集、運算研究與書寫產出等流程，適合社會科學或數據科學研究者。
+-   [**RStudio**](https://www.rstudio.com)：功能強大的R語言整合開發環境（Integrated Development Environment, IDE），建議還在跑SPSS[^9]的朋友們趕快棄坑，轉投R語言的陣營。RStudio的生態系除了擁有各種強大的統計功能套件外，圍繞著Rmarkdown[^10]套件的書寫生態也相當豐富（並有支援Zotero[^11]），整合了資料蒐集、運算研究與書寫產出等流程，適合社會科學或數據科學研究者。
 
-- [**Zettlr**](https://www.zettlr.com)：與Roam Research和Obsidian一樣，主要的功能是卡片盒（Zettelkasten）筆記法[^12]，支援wiki式的網絡化筆記語法。差別在於Zettlr是開源軟體，並且對Zotero有直接支援，適合不需要用到統計，且對卡片盒有學習耐心的學術研究者。
+-   [**Zettlr**](https://www.zettlr.com)：與Roam Research和Obsidian一樣，主要的功能是卡片盒（Zettelkasten）筆記法[^12]，支援wiki式的網絡化筆記語法。差別在於Zettlr是開源軟體，並且對Zotero有直接支援，適合不需要用到統計，且對卡片盒有學習耐心的學術研究者。
 
-- [**Mark Text**](https://marktext.app)：以上三種開源軟體的Markdown功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯Markdown文件，我會推薦這個功能強大的開源編輯器。就算有安裝以上三種軟體，我也會推薦它作為備用或不需用到其主要功能時的主力編輯器。
+-   [**Mark Text**](https://marktext.app)：以上三種開源軟體的Markdown功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯Markdown文件，我會推薦這個功能強大的開源編輯器。就算有安裝以上三種軟體，我也會推薦它作為備用或不需用到其主要功能時的主力編輯器。
 
-- [**Byword**](https://bywordapp.com)：非開源，售價為新台幣190元，推薦這個軟體的原因是iOS上缺乏夠好的開源編輯器（Android應該會有比較多不錯用的開源編輯器，但我沒涉略）。它因應了Apple生態系的工作需求，除了可以存取iCloud檔案夾（這很重要！很多app都是做軟體內的封閉式同步），編輯功能也非常完整，推薦愛吃蘋果的阿迪仔與阿咩仔使用。我個人則是使用另一款同樣可以存取iCloud檔案夾的[Pretext](https://apps.apple.com/app/pretext/id1347707000)（非開源、基本功能免費），推薦給覺得能用就好的人。
+-   [**Byword**](https://bywordapp.com)：非開源，售價為新台幣190元，推薦這個軟體的原因是iOS上缺乏夠好的開源編輯器（Android應該會有比較多不錯用的開源編輯器，但我沒涉略）。它因應了Apple生態系的工作需求，除了可以存取iCloud檔案夾（這很重要！很多app都是做軟體內的封閉式同步），編輯功能也非常完整，推薦愛吃蘋果的阿迪仔與阿咩仔使用。我個人則是使用另一款同樣可以存取iCloud檔案夾的[Pretext](https://apps.apple.com/app/pretext/id1347707000)（非開源、基本功能免費），推薦給覺得能用就好的人。
 
 [^9]: SPSS全稱為Statistical Package for the Social Sciences，是IBM所推出的又弱又貴的統計軟體，詳見[SPSS](http://www.ibm.com/analytics/us/en/technology/spss/)。
 
@@ -82,11 +82,11 @@ Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法
 
 Markdown並非艱深困難的語法，它僅僅是區塊與區段的標記語言，學習時間與記憶成本非常低，直接使用是習慣它的最快方法。以下推薦先閱讀Markdown的基本語法規則，並配合本站的Hugo模板所提供的範例，參考顯示效果（基於Blogdown的轉換，Other Elements的Hugo標記元素是失效的）。
 
-- [Markdown語法說明](https://markdown.tw)
+-   [Markdown語法說明](https://markdown.tw)
 
-- [Markdown Syntax Guide](https://hazukagi.sintaika.com/p/markdown-syntax-guide/)（顯示效果）
+-   [Markdown Syntax Guide](https://hazukagi.sintaika.com/p/markdown-syntax-guide/)（顯示效果）
 
-- [Markdown Syntax Guide](https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/markdown-syntax/index.md)（Markdown）
+-   [Markdown Syntax Guide](https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/markdown-syntax/index.md)（Markdown）
 
 ### Blogdown
 
@@ -100,7 +100,7 @@ Markdown並非艱深困難的語法，它僅僅是區塊與區段的標記語言
 
 [^13]: YAML是一種序列化的格式語言，常見於網站構建及資料庫的描述等用途上，也是目前Markdown文本儲存元數據的主要格式，參見[yaml.org](https://yaml.org)。
 
-```
+``` yaml
 title: 源稿の技術文件
 author: 陳奕達
 date: '2021-09-09'
@@ -124,43 +124,43 @@ comments: yes
 
 文章所儲存的元數據包含了`title`、`author`、`date`、`categories`、`tags`和`description`等較直覺的資訊，本文不另外說明，其他項目則說明如下：
 
-- `slug`：指定文件生成的永久檔名。
+-   `slug`：指定文件生成的永久檔名。
 
-- `image`：指定文件的封面圖片，本文的圖片檔名為`Unknown.jpg`，置於文件同一目錄下。
+-   `image`：指定文件的封面圖片，本文的圖片檔名為`Unknown.jpg`，置於文件同一目錄下。
 
-- `math`：指定是否以KaTex顯示數學公式，`~`代表預設值開啟。
+-   `math`：指定是否以KaTex顯示數學公式，`~`代表預設值開啟。
 
-- `license`：指定文件的授權方式，預設值為 CC-by-nc-sa 4.0。
+-   `license`：指定文件的授權方式，預設值為 CC-by-nc-sa 4.0。
 
-- `hidden`：指定文章是否隱藏。
+-   `hidden`：指定文章是否隱藏。
 
-- `comments`：指定是否開放用戶評論文章的外掛模組，本站使用的模組為[Disqus](https://disqus.com)提供。
+-   `comments`：指定是否開放用戶評論文章的外掛模組，本站使用的模組為[Disqus](https://disqus.com)提供。
 
 #### Shortcode
 
 Shortcode是由Hugo靜態網頁架構提供，藉此補充Markdown標記語法對HTML支援的不足之處。因此，Hugo的Shortcode其實是一組對應到所有HTML的語法支援，而大部分的基礎書寫語法、插入圖片及超連結語法等已有Markdown語法的支持，此小節僅需理解YouTube及Vimo等多媒體影片的插入，以及對Tweet或Instagram等社群貼文的顯示語法，官方說明文件及本站模板示例如下。
 
-- [Shortcodes | Hugo](https://gohugo.io/content-management/shortcodes/)
+-   [Shortcodes \| Hugo](https://gohugo.io/content-management/shortcodes/)
 
-- [Rich Content](https://hazukagi.sintaika.com/p/rich-content/)（顯示效果）
+-   [Rich Content](https://hazukagi.sintaika.com/p/rich-content/)（顯示效果）
 
-- [Rich Content](https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/rich-content/index.md)（Markdown）
+-   [Rich Content](https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/rich-content/index.md)（Markdown）
 
 #### R code
 
 R code部分包含了R統計學的操作方法，各位或許不太用得上，但本站希望未來可以收錄各種可重製研究的文章，因此特別給了它一個小小位置，對統計或數據科學有興趣的朋友可藉此機會瞭解RMarkdown的趣味所在。
 
-- [RMarkdown](https://rmarkdown.rstudio.com)
+-   [RMarkdown](https://rmarkdown.rstudio.com)
 
 #### Mathematical
 
 如上一小節所示，原生的Markdown並不支援數學公式的顯示。但由於學術書寫的需求逐漸拓及Markdown的領域，於是依附於Pandoc強大轉換能力的編輯器一一出現，它們借助於KaTex語法有效地顯示各種數學符號及其在公式當中的相對位置，KaTex的技術文件及本站模板示例如下。
 
-- [KaTex](https://katex.org)
+-   [KaTex](https://katex.org)
 
-- [Math Typesetting](https://hazukagi.sintaika.com/p/math-typesetting/)（顯示效果）
+-   [Math Typesetting](https://hazukagi.sintaika.com/p/math-typesetting/)（顯示效果）
 
-- [Math Typesetting](https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/math-typesetting/index.md)（Markdown）
+-   [Math Typesetting](https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/math-typesetting/index.md)（Markdown）
 
 #### Bibliographic
 
@@ -170,7 +170,7 @@ R code部分包含了R統計學的操作方法，各位或許不太用得上，�
 
 本站的Blogdown架構自然也是支援這種引用方式的。只要將BibTex文件與Markdown文本放在同一資料夾下，並在YAML當中指定BibTex文件的檔名，即可渲染出引用的格式。那由於本站模板的格式關係，比起APA等行內引用格式，會較為適合運用註腳的引用格式。未來將會釋出一篇貼文，示範本站的引用格式以及CSL的樣式文件，以下僅先提供BibTex的官方網站給各位瞭解。
 
-- [BibTex](http://www.bibtex.org)
+-   [BibTex](http://www.bibtex.org)
 
 ## 第二部分｜格式說明
 
