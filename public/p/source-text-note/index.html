@@ -132,78 +132,79 @@
 </header>
 
     <section class="article-content">
-    <p>本站是透過R<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>的Blogdown<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過Pandoc<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>轉換文件中的標記語言後，再以Hugo<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>模板渲染為網頁文章。本文首先將說明此架構下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。</p>
-<p>本文僅供對Markdown完全沒有概念的朋友參考，有Markdown使用經驗的朋友可以略過第一部分的說明，唯需注意第二部分格式說明當中的建議。另外，本站並不強迫受邀作者繳交Markdown文件，作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG），但也請稍加注意書寫的格式說明，本站會在收到稿件後交由編輯處理。</p>
+    <p>本站是透過<strong>R</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>的<strong>Blogdown</strong><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>套件所搭建的靜態網誌，站內所有文章皆以純文本（plain text）編寫，通過<strong>Pandoc</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>轉換文件中的標記語言後，再以<strong>Hugo</strong><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>模板渲染為網頁文章。本文首先將說明此架構下，純文本的標記規則，以及其轉換之後的效果。並在最後提供文章格式建議，包括文章結構、層級安排及引用格式等相關說明。</p>
+<p>本文僅供對<strong>Markdown</strong>完全沒有概念的朋友參考，有<strong>Markdown</strong>使用經驗的朋友可以略過第一部分的說明，唯需注意第二部分格式說明當中的建議。另外，本站並不強迫受邀作者繳交<strong>Markdown</strong>文件，<strong>作者可依書寫習慣提交純文本、富文本（rich text）或所見即所得文件（WYSIWYG）</strong>，但也請<strong>稍加注意書寫的格式說明</strong>，本站會在收到稿件後交由編輯處理。</p>
 <h2 id="第一部分標記語言">第一部分｜標記語言</h2>
-<p>Markdown<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>直覺的標記方式，除了免去如Word檔等所見即所得文件（WYSIWYG）的各種格式錯誤，省下書寫時所浪費的格式調整時間，也讓使用者的書寫得以從Google或Microsoft等企業所提供的封閉式辦公文件當中解放，輕鬆進行轉換與渲染，銜接各種工作流程。本站使用的R套件Blogdown即是一個以Markdown為基礎的靜態網頁環境，使用者可以直接將具有Markdown標記的平面文件轉換為網頁貼文。</p>
-<p>Blogdown套件除了提供簡潔的Markdown語法支持外，也提供了各種多媒體與格式支援。除了支援KaTex<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>數學公式，Hugo也提供Shortcode<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>語法，讓使用者可以插入YouTube影片及Instagram貼文等。另外，如果你是運用R語言的數據科學家的話，Blogdown套件也直接支持了R code的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用BibTex<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>管理所引用的參考文獻。</p>
-<p>本節將依先來後到分為通用的Markdown標記語法與Blogdown（含Hugo）的特殊語法功能等兩部分，簡單介紹以上所提的標記法與顯示效果。若需要更詳細的資訊，建議參考Blogdown開發者謝益輝所著的專書<a class="link" href="https://bookdown.org/yihui/blogdown/"  target="_blank" rel="noopener"
+<p><strong>Markdown</strong><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>直覺的標記方式，除了免去如<strong>Word</strong>檔等所見即所得文件（<strong>WYSIWYG</strong>）的各種格式錯誤，省下書寫時所浪費的格式調整時間，也讓使用者的書寫得以從<strong>Google</strong>或<strong>Microsoft</strong>等企業所提供的封閉式辦公文件當中解放，輕鬆進行轉換與渲染，銜接各種工作流程。本站使用的<strong>R</strong>套件<strong>Blogdown</strong>即是一個以<strong>Markdown</strong>為基礎的靜態網頁環境，使用者可以直接將具有<strong>Markdown</strong>標記的平面文件轉換為網頁貼文。</p>
+<p><strong>Blogdown</strong>套件除了提供簡潔的<strong>Markdown</strong>語法支持外，也提供了各種多媒體與格式支援。除了支援<strong>KaTex</strong><sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>數學公式，也提供了<strong>Hugo</strong>式的<strong>Shortcode</strong><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>語法，讓使用者可以插入<strong>YouTube</strong>影片及<strong>Instagram</strong>貼文等。另外，如果你是運用<strong>R</strong>語言的數據科學家的話，<strong>Blogdown</strong>套件也直接支持了<strong>R code</strong>的執行，讓研究者得以直接在網頁上發表可再製研究的內容與圖表，甚至可以運用<strong>BibTex</strong><sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>管理所引用的參考文獻。</p>
+<p>本節將依先來後到分為通用的<strong>Markdown</strong>標記語法與<strong>Blogdown</strong>（含<strong>Hugo</strong>）的特殊語法功能等兩部分，簡單介紹以上所提的標記法與顯示效果。若需要更詳細的資訊，建議參考<strong>Blogdown</strong>開發者謝益輝所著的專書<a class="link" href="https://bookdown.org/yihui/blogdown/"  target="_blank" rel="noopener"
     ><em>《blogdown: Creating Websites with R Markdown》</em></a>。</p>
 <h3 id="markdown">Markdown</h3>
-<p>Markdown是一種簡潔的標記語言，是目前主流的純文本標記語法，許多編輯器、筆記軟體及生產力工具現在都已經支援Markdown標記。在此除了說明一些寫作會運用到的基礎語法外，也會推薦一些開源的Markdown編輯器，提供尚未有慣用編輯器的朋友們參考。</p>
-<p>除了編輯文本之外，如何用Pandoc渲染Markdown標記文本為其他類型的文件也是一門學問，尤其是含有中日韓（CJK）字元及LaTex標記的文本，在沒有設定好的狀況下，轉換為PDF時容易有缺字或渲染失敗的問題。不幸的是使用Pandoc僅僅是Markdown工作流程的基礎功而已，要建立流暢的工作流程，就必須熟悉各種文檔間的轉換及渲染的設定方式。</p>
-<p>或許一開始在學的時候會因為超級折騰，而放棄純文本回去用WYSIWYG。因此，在這一開始，我推薦你下先大略看看以下的精彩文章，參考其他人如何樂悠遊地運用純文本，並回過頭來對照自己的筆記及寫作流程，以及自己是否有使用標記語言進行純文本寫作的需求。但畢竟我也不能確定怎樣最好，因為我的筆記其實是綁在Zotero下的富文本格式（到時候要逃難可能也是極為困難的吧），但RStudio支持富文本的複製貼上，工作流程剛好也就無痛銜接了。</p>
+<p><strong>Markdown</strong>是一種簡潔的標記語言，是目前主流的純文本標記語法，許多編輯器、筆記軟體及生產力工具現在都已經支援<strong>Markdown</strong>標記。在此除了說明一些寫作會運用到的基礎語法外，也會推薦一些開源的<strong>Markdown</strong>編輯器，提供尚未有慣用編輯器的朋友們參考。</p>
+<p>除了編輯文本之外，如何用<strong>Pandoc</strong>渲染<strong>Markdown</strong>標記文本為其他類型的文件也是一門學問，尤其是含有中日韓（<strong>CJK</strong>）字元及<strong>LaTex</strong>標記的文本，在沒有設定好的狀況下，轉換為PDF時容易有缺字或渲染失敗的問題。不幸的是使用<strong>Pandoc</strong>僅僅是<strong>Markdown</strong>工作流程的基礎功而已，要建立流暢的工作流程，就必須熟悉各種文檔間的轉換及渲染的設定方式。</p>
+<p>或許一開始在學的時候會因為超級折騰，而放棄純文本回去用<strong>WYSIWYG</strong>。在此之前，推薦各位可以先看看以下的精彩文章，參考其他人如何運用純文本，再回過頭來對照自己的筆記及寫作流程，以及自己是否有使用標記語言進行純文本寫作的需求。</p>
 <ul>
 <li><a class="link" href="https://collabin.netlify.app/yongfu/write-in-rmd/"  target="_blank" rel="noopener"
-    >網路時代下的寫作 - Why R Markdown? - 協作閣</a></li>
+    ><em>網路時代下的寫作 - Why R Markdown? - 協作閣</em></a></li>
 <li><a class="link" href="https://sspai.com/post/64842"  target="_blank" rel="noopener"
-    >Markdown 写作，Pandoc 转换：我的纯文本学术写作流程 - 少数派</a></li>
+    ><em>Markdown 写作，Pandoc 转换：我的纯文本学术写作流程 - 少数派</em></a></li>
 <li><a class="link" href="https://www.zhihu.com/question/23427617/answer/1461195696"  target="_blank" rel="noopener"
-    >如何构建自己的笔记系统？ - 知乎</a></li>
+    ><em>如何构建自己的笔记系统？ - 知乎</em></a>（請用電腦版模式打開，手機版瀏覽需要知乎app）</li>
 </ul>
-<p>回過頭來，其實這篇文章只是要說明本站使用的技術，因此只是順勢推薦一下Markdown的入門資訊，並在這裡給一劑進入Markdown世界前的預防針，畢竟被卡車撞這種事情也不是每個人都會發生。最後，請善用<a class="link" href="https://duckduckgo.com/"  target="_blank" rel="noopener"
-    >Duckduckgo</a>或<a class="link" href="https://www.startpage.com"  target="_blank" rel="noopener"
-    >Startpage</a>等搜尋引擎（不推薦賣個資又養套殺使用者的Google）或各編輯器所提供的說明文件來學習，本文不再贅述。</p>
+<p>我並不是完全的純文本信徒，我比較在意的反而是資料遷徙的自由度以及文獻來源的整理與運用，而且現在大多數的<strong>Markdown</strong>編輯器也都支援富文本或<strong>WYSIWYG</strong>文件的格式辨認。因此，我的工作流程中並沒有最近很紅的<strong>Obsidian</strong>或<strong>Roam Research</strong>等純文本網絡筆記，反而是在<strong>Zotero</strong><sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>下蒐集、整理資料並製作富文本筆記，然後在寫作時直接將內容複製到<strong>RStudio</strong>及<strong>Mark Text</strong>等編輯器中。雖然純文本已經挾著<strong>Markdown</strong>的潮流，勢不可擋地進入到書寫編輯的各領域當中，但依需求選擇適合自己的工具並與<strong>Markdown</strong>所擁有的自由度配合才是最重要的。</p>
+<p>回過頭來，這篇文章要說明的其實是本站使用的工具以及調和此工具與（<strong>Word</strong>式的）舊書寫習慣之間的落差，而這些<strong>Markdown</strong>的入門資訊恰恰好也會有助於理解目前電腦書寫的趨勢。最後，技術細節的部分請善用<a class="link" href="https://duckduckgo.com/"  target="_blank" rel="noopener"
+    ><strong>Duckduckgo</strong></a>或<a class="link" href="https://www.startpage.com"  target="_blank" rel="noopener"
+    ><strong>Startpage</strong></a>等搜尋引擎（不推薦賣個資又養套殺使用者的<strong>Google</strong>）或各編輯器所提供的說明文件來學習，本文不再贅述。</p>
 <h4 id="開源編輯器推薦">開源編輯器推薦</h4>
-<p>網路上已有不少對Markdown編輯器的推薦，許多筆記軟體如<a class="link" href="https://www.notion.so/"  target="_blank" rel="noopener"
-    >Notion</a>、<a class="link" href="https://evernote.com"  target="_blank" rel="noopener"
-    >Evernote</a>、<a class="link" href="https://roamresearch.com"  target="_blank" rel="noopener"
-    >Roam Research</a>及<a class="link" href="https://obsidian.md"  target="_blank" rel="noopener"
-    >Obsidian</a>等，都是以Markdown為基礎進行文本的標記與渲染。如果你已經用習慣了以上的軟體，可直接跳過本小節，但如果你是Markdown新手，或是想要開始嘗試開源軟體的話，可以試著瞭解以下所推薦的編輯器。</p>
+<p>網路上已有不少對<strong>Markdown</strong>編輯器的推薦，許多筆記軟體如<a class="link" href="https://www.notion.so/"  target="_blank" rel="noopener"
+    ><strong>Notion</strong></a>、<a class="link" href="https://evernote.com"  target="_blank" rel="noopener"
+    ><strong>Evernote</strong></a>、<a class="link" href="https://roamresearch.com"  target="_blank" rel="noopener"
+    ><strong>Roam Research</strong></a>及<a class="link" href="https://obsidian.md"  target="_blank" rel="noopener"
+    ><strong>Obsidian</strong></a>等，都是以<strong>Markdown</strong>為基礎進行文本的標記與渲染。如果你已經用習慣了以上的軟體，可直接跳過本小節，但如果你是<strong>Markdown</strong>新手，或是想要開始嘗試開源軟體的話，可以試著瞭解以下所推薦的編輯器。</p>
 <ul>
 <li>
 <p><a class="link" href="https://atom.io"  target="_blank" rel="noopener"
-    ><strong>Atom</strong></a>：GitHub開發的開源程式編輯器，在GitHub的生態系中有相當豐富的外掛。推薦給對Python等程式語言有興趣，或預計會開始學習程式語言的人。</p>
+    ><strong>Atom</strong></a>：<strong>GitHub</strong>開發的開源程式編輯器，在<strong>GitHub</strong>的生態系中有相當豐富的外掛。推薦給對Python等程式語言有興趣，或預計會開始學習程式語言的人。</p>
 </li>
 <li>
 <p><a class="link" href="https://www.rstudio.com"  target="_blank" rel="noopener"
-    ><strong>RStudio</strong></a>：功能強大的R語言整合開發環境（Integrated Development Environment, IDE），建議還在跑SPSS<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>的朋友們趕快棄坑，轉投R語言的陣營。RStudio的生態系除了擁有各種強大的統計功能套件外，圍繞著Rmarkdown<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>套件的書寫生態也相當豐富（並有支援Zotero<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>），整合了資料蒐集、運算研究與書寫產出等流程，適合社會科學或數據科學研究者。</p>
+    ><strong>RStudio</strong></a>：功能強大的<strong>R</strong>語言整合開發環境（Integrated Development Environment, IDE），建議還在跑<strong>SPSS</strong><sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>的朋友們趕快棄坑，轉投<strong>R</strong>的陣營。<strong>RStudio</strong>的生態系除了擁有各種強大的統計功能套件外，圍繞著<strong>Rmarkdown</strong><sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup>套件的書寫生態也相當豐富（並有支援Zotero），整合了資料蒐集、運算研究與書寫產出等流程，適合社會科學或數據科學研究者。</p>
 </li>
 <li>
 <p><a class="link" href="https://www.zettlr.com"  target="_blank" rel="noopener"
-    ><strong>Zettlr</strong></a>：與Roam Research和Obsidian一樣，主要的功能是卡片盒（Zettelkasten）筆記法<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup>，支援wiki式的網絡化筆記語法。差別在於Zettlr是開源軟體，並且對Zotero有直接支援，適合不需要用到統計，且對卡片盒有學習耐心的學術研究者。</p>
+    ><strong>Zettlr</strong></a>：與<strong>Roam Research</strong>和<strong>Obsidian</strong>一樣，主要的功能是卡片盒（<strong>Zettelkasten</strong>）筆記法<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup>，支援wiki式的網絡化筆記語法。差別在於<strong>Zettlr</strong>是開源軟體，並且對<strong>Zotero</strong>有直接支援，適合不需要用到統計，且對卡片盒有學習耐心的學術研究者。</p>
 </li>
 <li>
 <p><a class="link" href="https://marktext.app"  target="_blank" rel="noopener"
-    ><strong>Mark Text</strong></a>：以上三種開源軟體的Markdown功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯Markdown文件，我會推薦這個功能強大的開源編輯器。就算有安裝以上三種軟體，我也會推薦它作為備用或不需用到其主要功能時的主力編輯器。</p>
+    ><strong>Mark Text</strong></a>：以上三種開源軟體的<strong>Markdown</strong>功能，都只能算是支援主要功能的書寫整合，而且有著較高的學習成本。如果只需要純粹地編輯<strong>Markdown</strong>文件，我會推薦這個功能強大的開源編輯器。就算有安裝以上三種軟體，我也會推薦它作為備用或不需用到其主要功能時的主力編輯器。</p>
 </li>
 <li>
 <p><a class="link" href="https://bywordapp.com"  target="_blank" rel="noopener"
-    ><strong>Byword</strong></a>：非開源，售價為新台幣190元，推薦這個軟體的原因是iOS上缺乏夠好的開源編輯器（Android應該會有比較多不錯用的開源編輯器，但我沒涉略）。它因應了Apple生態系的工作需求，除了可以存取iCloud檔案夾（這很重要！很多app都是做軟體內的封閉式同步），編輯功能也非常完整，推薦愛吃蘋果的阿迪仔與阿咩仔使用。我個人則是使用另一款同樣可以存取iCloud檔案夾的<a class="link" href="https://apps.apple.com/app/pretext/id1347707000"  target="_blank" rel="noopener"
-    >Pretext</a>（非開源、基本功能免費），推薦給覺得能用就好的人。</p>
+    ><strong>Byword</strong></a>：非開源，售價為新台幣190元，推薦這個軟體的原因是<strong>iOS</strong>上缺乏夠好的開源編輯器（<strong>Android</strong>應該會有比較多不錯用的開源編輯器，但我沒涉略）。它因應了<strong>Apple</strong>生態系的工作需求，除了可以存取<strong>iCloud</strong>檔案夾（這很重要！很多app都是做軟體內的封閉式同步），編輯功能也非常完整，推薦愛吃蘋果的阿迪仔與阿咩仔使用。我個人則是使用另一款同樣可以存取<strong>iCloud</strong>檔案夾的<a class="link" href="https://apps.apple.com/app/pretext/id1347707000"  target="_blank" rel="noopener"
+    ><strong>Pretext</strong></a>（非開源、基本功能免費），推薦給覺得能用就好的人。</p>
 </li>
 </ul>
 <h4 id="語法說明與顯示效果">語法說明與顯示效果</h4>
-<p>Markdown並非艱深困難的語法，它僅僅是區塊與區段的標記語言，學習時間與記憶成本非常低，直接使用是習慣它的最快方法。以下推薦先閱讀Markdown的基本語法規則，並配合本站的Hugo模板所提供的範例，參考顯示效果（基於Blogdown的轉換，Other Elements的Hugo標記元素是失效的）。</p>
+<p><strong>Markdown</strong>並非艱深困難的語法，它僅僅是區塊與區段的標記語言，學習時間與記憶成本非常低，直接使用是習慣它的最快方法。以下推薦先閱讀<strong>Markdown</strong>的基本語法規則，並配合本站的<strong>Hugo</strong>模板所提供的範例，參考顯示效果（基於<strong>Blogdown</strong>的轉換，Other Elements的<strong>Hugo</strong>標記元素是失效的）。</p>
 <ul>
 <li>
 <p><a class="link" href="https://markdown.tw"  target="_blank" rel="noopener"
-    >Markdown語法說明</a></p>
+    ><em>Markdown語法說明</em></a></p>
 </li>
 <li>
 <p><a class="link" href="https://hazukagi.sintaika.com/p/markdown-syntax-guide/"  target="_blank" rel="noopener"
-    >Markdown Syntax Guide</a>（顯示效果）</p>
+    ><em>Markdown Syntax Guide</em></a>（顯示效果）</p>
 </li>
 <li>
 <p><a class="link" href="https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/markdown-syntax/index.md"  target="_blank" rel="noopener"
-    >Markdown Syntax Guide</a>（Markdown）</p>
+    ><em>Markdown Syntax Guide</em></a>（Markdown）</p>
 </li>
 </ul>
 <h3 id="blogdown">Blogdown</h3>
-<p>如上一小節所示，Markdown的基本標記語法僅能提供平面書寫的需求，而網頁貼文其實還包含了插入YouTube影片或社群網站內容等多媒體需求。在傳統的Markdown書寫當中，會直接以HTML語言來補充，但既然我們都使用Blogdown套件了，那這些功能當然也是要以更簡潔的語法方案來取代嘍。</p>
-<p>雖然說本站所使用的語法集是由R套件Blogdown所提供，但其實除了Shortcode及R code之外，大部分允許使用Pandoc轉換的編輯器都有提供對KaTex及BibTex的支援。所以，如果你使用的編輯器並非RStudio也不必太過擔心。</p>
+<p>如上一小節所示，<strong>Markdown</strong>的基本標記語法僅能提供平面書寫的需求，而網頁貼文其實還包含了插入<strong>YouTube</strong>影片或社群網站內容等多媒體需求。在傳統的<strong>Markdown</strong>書寫當中，會直接以<strong>HTML</strong>語言來補充，但既然我們都使用<strong>Blogdown</strong>套件了，那這些功能當然也是要以更簡潔的語法方案來取代嘍。</p>
+<p>雖然說本站所使用的語法集是由<strong>R</strong>套件<strong>Blogdown</strong>所提供，但其實除了<strong>Shortcode</strong>及<strong>R code</strong>之外，大部分允許使用<strong>Pandoc</strong>轉換的編輯器都有提供對<strong>KaTex</strong>及<strong>BibTex</strong>的支援。平常使用下，都是可以無痛轉換的。</p>
 <h4 id="yaml">YAML</h4>
-<p>在開始介紹Blogdown可以運用的語法前，必須先介紹一個叫做YAML<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>的東東。這個YAML是儲存文件元數據（metadata）的區塊，一般會置於文件開頭，用以描述檔案性質或是用於寫入特定程式功能執行的指示，資訊內容可以包含標題、簡述、日期時間、語言類型、標籤、⋯⋯等對應到HTML語言的基本資訊；另外也有配合編輯器或Pandoc的特殊格式，例如：書目資訊、渲染格式、程式碼模式、⋯⋯等功能。本站在Blogdown架構下的YAML以本篇為例：</p>
+<p>在開始介紹<strong>Blogdown</strong>可以運用的語法前，必須先介紹一個叫做<strong>YAML</strong><sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>的東東。這個<strong>YAML</strong>是儲存文件元數據（metadata）的區塊，一般會置於文件開頭，用以描述檔案性質或是用於寫入特定程式功能執行的指示，資訊內容可以包含標題、簡述、日期時間、語言類型、標籤、⋯⋯等對應到<strong>HTML</strong>語言的基本資訊；另外也有配合編輯器或<strong>Pandoc</strong>的特殊格式，例如：書目資訊、渲染格式、程式碼模式、⋯⋯等功能。本站在<strong>Blogdown</strong>架構下的<strong>YAML</strong>以本篇為例：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">源稿の技術文件</span><span class="w">
 </span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l">陳奕達</span><span class="w">
 </span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;2021-09-09&#39;</span><span class="w">
@@ -232,7 +233,7 @@
 <p><code>image</code>：指定文件的封面圖片，本文的圖片檔名為<code>Unknown.jpg</code>，置於文件同一目錄下。</p>
 </li>
 <li>
-<p><code>math</code>：指定是否以KaTex顯示數學公式，<code>~</code>代表預設值開啟。</p>
+<p><code>math</code>：指定是否以<strong>KaTex</strong>顯示數學公式，<code>~</code>代表預設值開啟。</p>
 </li>
 <li>
 <p><code>license</code>：指定文件的授權方式，預設值為 CC-BY-NC-SA 4.0。</p>
@@ -242,112 +243,115 @@
 </li>
 <li>
 <p><code>comments</code>：指定是否開放用戶評論文章的外掛模組，本站使用的模組為<a class="link" href="https://disqus.com"  target="_blank" rel="noopener"
-    >Disqus</a>提供。</p>
+    ><strong>Disqus</strong></a>提供。</p>
 </li>
 </ul>
 <h4 id="shortcode">Shortcode</h4>
-<p>Shortcode是由Hugo靜態網頁架構提供，藉此補充Markdown標記語法對HTML支援的不足之處。因此，Hugo的Shortcode其實是一組對應到所有HTML的語法支援，而大部分的基礎書寫語法、插入圖片及超連結語法等已有Markdown語法的支持，此小節僅需理解YouTube及Vimo等多媒體影片的插入，以及對Tweet或Instagram等社群貼文的顯示語法，官方說明文件及本站模板示例如下。</p>
+<p><strong>Shortcode</strong>是由<strong>Hugo</strong>靜態網頁架構提供，藉此補充<strong>Markdown</strong>標記語法對<strong>HTML</strong>支援的不足之處。因此，<strong>Hugo</strong>的<strong>Shortcode</strong>其實是一組對應到所有<strong>HTML</strong>的語法支援，而大部分的基礎書寫語法、插入圖片及超連結語法等已有<strong>Markdown</strong>語法的支持，此小節僅需理解<strong>YouTube</strong>及<strong>Vimeo</strong>等多媒體影片的插入，以及對<strong>Tweet</strong>或<strong>Instagram</strong>等社群貼文的顯示語法，官方說明文件及本站模板示例如下。</p>
 <ul>
 <li>
 <p><a class="link" href="https://gohugo.io/content-management/shortcodes/"  target="_blank" rel="noopener"
-    >Shortcodes | Hugo</a></p>
+    ><em>Shortcodes | Hugo</em></a></p>
 </li>
 <li>
 <p><a class="link" href="https://hazukagi.sintaika.com/p/rich-content/"  target="_blank" rel="noopener"
-    >Rich Content</a>（顯示效果）</p>
+    ><em>Rich Content</em></a>（顯示效果）</p>
 </li>
 <li>
 <p><a class="link" href="https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/rich-content/index.md"  target="_blank" rel="noopener"
-    >Rich Content</a>（Markdown）</p>
+    ><em>Rich Content</em></a>（<strong>Markdown</strong>）</p>
 </li>
 </ul>
 <h4 id="r-code">R code</h4>
-<p>R code部分包含了R統計學的操作方法，各位或許不太用得上，但本站希望未來可以收錄各種可重製研究的文章，因此特別給了它一個小小位置，對統計或數據科學有興趣的朋友可藉此機會瞭解RMarkdown的趣味所在。</p>
+<p><strong>R code</strong>包含了<strong>R</strong>統計的操作方法，各位或許不太用得上，但本站希望未來可以收錄各種可重製研究的文章，因此特別給了它一個小小位置，對統計或數據科學有興趣的朋友可藉此機會瞭解<strong>RMarkdown</strong>的趣味所在。</p>
 <ul>
 <li><a class="link" href="https://rmarkdown.rstudio.com"  target="_blank" rel="noopener"
-    >RMarkdown</a></li>
+    ><em>RMarkdown</em></a></li>
 </ul>
 <h4 id="mathematical">Mathematical</h4>
-<p>如上一小節所示，原生的Markdown並不支援數學公式的顯示。但由於學術書寫的需求逐漸拓及Markdown的領域，於是依附於Pandoc強大轉換能力的編輯器一一出現，它們借助於KaTex語法有效地顯示各種數學符號及其在公式當中的相對位置，KaTex的技術文件及本站模板示例如下。</p>
+<p>如上一小節所示，原生的<strong>Markdown</strong>並不支援數學公式的顯示。但由於學術書寫的需求逐漸拓及<strong>Markdown</strong>的領域，於是依附於<strong>Pandoc</strong>強大轉換能力的編輯器一一出現，它們借助於<strong>KaTex</strong>語法有效地顯示各種數學符號及其在公式當中的相對位置，<strong>KaTex</strong>的技術文件及本站模板示例如下。</p>
 <ul>
 <li>
 <p><a class="link" href="https://katex.org"  target="_blank" rel="noopener"
-    >KaTex</a></p>
+    ><em>KaTex</em></a></p>
 </li>
 <li>
 <p><a class="link" href="https://hazukagi.sintaika.com/p/math-typesetting/"  target="_blank" rel="noopener"
-    >Math Typesetting</a>（顯示效果）</p>
+    ><em>Math Typesetting</em></a>（顯示效果）</p>
 </li>
 <li>
 <p><a class="link" href="https://github.com/aciddylan/hazukagiWeb/blame/master/content/post/math-typesetting/index.md"  target="_blank" rel="noopener"
-    >Math Typesetting</a>（Markdown）</p>
+    ><em>Math Typesetting</em></a>（<strong>Markdown</strong>）</p>
 </li>
 </ul>
 <h4 id="bibliographic">Bibliographic</h4>
-<p>與數學公式一樣，書目引用的支援也來自於漸漸形成的Markdown學術寫作需求。雖然書目引用同樣可以透過手動的方式來加入（相信各位研究生們都很在行），但Pandoc同樣也具有對BibTex的格式支援，並且可以透過CSL<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup>渲染為指定的引用樣式。這些功能在許多編輯器裡當然是不會缺席的，甚至還有編輯器提供了對Zotero的直接支援（例如本文介紹的RStudio和Zettlr都支援Zotero），從Zotero直接引用後就自動生成BibTex文件。</p>
-<p>本站的Blogdown架構自然也是支援這種引用方式的。只要將BibTex文件與Markdown文本放在同一資料夾下，並在YAML當中指定BibTex文件的檔名，即可渲染出引用的格式。那由於本站模板的格式關係，比起APA等行內引用格式，會較為適合運用註腳的引用格式。未來將會釋出一篇貼文，示範本站的引用格式以及CSL的樣式文件，以下僅先提供BibTex的官方網站給各位瞭解。</p>
+<p>與數學公式一樣，書目引用的支援也來自於漸漸形成的<strong>Markdown</strong>學術寫作需求。雖然書目引用同樣可以透過手動的方式來加入（相信各位研究生們都很在行），但<strong>Pandoc</strong>同樣也具有對<strong>BibTex</strong>的格式支援，並且可以透過<strong>CSL</strong><sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup>渲染為指定的引用樣式。這些功能在許多編輯器裡當然是不會缺席的，甚至還有編輯器提供了對<strong>Zotero</strong>的直接支援（例如本文介紹的<strong>RStudio</strong>和<strong>Zettlr</strong>都支援<strong>Zotero</strong>），從<strong>Zotero</strong>直接引用後就自動生成<strong>BibTex</strong>文件。</p>
+<p>本站的<strong>Blogdown</strong>架構自然也是支援這種引用方式的。只要將<strong>BibTex</strong>文件與<strong>Markdown</strong>文本放在同一資料夾下，並在<strong>YAML</strong>當中指定<strong>BibTex</strong>文件的檔名，即可渲染出引用的格式。由於本站模板的格式關係，比起<strong>APA</strong>等行內引用格式，會較為適合運用註腳的引用格式。未來將會釋出一篇貼文，示範本站的引用格式以及<strong>CSL</strong>的樣式文件，以下僅先提供<strong>BibTex</strong>的官方網站給各位瞭解。</p>
 <ul>
 <li><a class="link" href="http://www.bibtex.org"  target="_blank" rel="noopener"
-    >BibTex</a></li>
+    ><em>BibTex</em></a></li>
 </ul>
 <h2 id="第二部分格式說明">第二部分｜格式說明</h2>
-<h3 id="文章結構">文章結構</h3>
+<p>如上述，本節最主要的目的是調和本站所運用的工具及（<strong>Word</strong>式的）舊書寫習慣之間的落差。如果你並非純文本的使用者也不必擔心技術上的問題，只需要理解文章格式即可，其他工作會由編輯人員來處理。</p>
+<p>在這裏，你可能會有另一個疑惑&mdash;&mdash;自己的書寫風格真的能套用到一個標準格式當中嗎？這也大可不必擔心，這個格式僅僅是基於網站顯示的可讀性參考資料，並不是要框限作者文字的表現力。</p>
+<h3 id="結構與格式">結構與格式</h3>
 <h3 id="層級安排">層級安排</h3>
-<p>不管是哪一種類型的文本，標題層級絕對可以說是最重要的功能。但在Word等WYSIWYG文件當中，常常會因為「看起來像」的原因，而讓使用者混淆內文與標題的格式設定，在Markdown標記中則不常發生這種狀況。（試想你要把內文加粗、放大，並且得到和渲染後的某層標題一樣的字型和顏色效果的話，要加多少標記呢？）</p>
-<p>在Markdown文件當中，第一級標題通常就代表整份文件的大標，第二級之後才是內文各章節的標題。但依編輯器與轉換設定的不同，渲染規則也會有些許差異。例如，使用RStudio時，如果將文本類型指定為rtical（如ctexart）或是使用bookdown（如ctexbook）時，第一級標題便會是各章節的標題，而文件的大標則會儲存在YAML當中；Blogdown雖然也將大標儲存在YAML中，但內文則遵循一般的標題規則，若在內文使用第一集標題的話，雖然會顯示其格式，但目錄表會忽略不計。特例的部分就只能請各位跟編輯器好好培養感情，理解自己常用的格式及渲染的效果了。</p>
-<p>一般的Markdown提供有六層的標題記號，但第五級之後的標題文字漸漸變得比段落字體還小，而且不會出現在預設生成的目錄表中。因此，除非有特別調整渲染格式，一般Markdown文本在輸出為HTML時，文章結構不建議超過四級。</p>
+<p>不管是哪一種類型的文本，標題層級絕對可以說是最重要的功能。但在<strong>Word</strong>等<strong>WYSIWYG</strong>文件當中，常常會因為「看起來像」的原因，而讓使用者混淆內文與標題的格式設定，在<strong>Markdown</strong>標記中則不常發生這種狀況。（試想你要把內文加粗、放大，並且得到和渲染後的某層標題一樣的字型和顏色效果的話，要加多少標記呢？）</p>
+<p>在<strong>Markdown</strong>文件當中，第一級標題通常就代表整份文件的大標，第二級之後才是內文各章節的標題。但依編輯器與轉換設定的不同，渲染規則也會有些許差異。例如，使用<strong>RStudio</strong>時，如果將文本類型指定為<strong>rtical</strong>（如<strong>ctexart</strong>）或是使用<strong>bookdown</strong>（如<strong>ctexbook</strong>）時，第一級標題便會是各章節的標題，而文件的大標則會儲存在<strong>YAML</strong>當中；<strong>Blogdown</strong>雖然也將大標儲存在<strong>YAML</strong>中，但內文則遵循一般的標題規則，若在內文使用第一集標題的話，雖然會顯示其格式，但目錄表會忽略不計。特例的部分就只能請各位跟編輯器好好培養感情，理解自己常用的格式及渲染的效果了。</p>
+<p>一般的<strong>Markdown</strong>提供有六層的標題記號，但第五級之後的標題文字會漸漸變得比段落內文的字體還小，而且不會出現在預設生成的目錄表中。因此，除非有特別調整渲染格式，一般<strong>Markdown</strong>文本在輸出為<strong>HTML</strong>時，<strong>文章結構不建議超過四級</strong>。</p>
 <h3 id="引用格式">引用格式</h3>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>R是一套運用於統計的開發環境，具有非常活潑的開發生態。透過開發者的集體努力，R有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各種類型的研究報告。詳見<a class="link" href="https://www.r-project.org"  target="_blank" rel="noopener"
-    ><em>The R Project for Statistical Computing</em></a><em>。</em>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><strong>R</strong>是一套運用於統計的開發環境，具有非常活潑的開發生態。透過開發者的集體努力，<strong>R</strong>有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各種類型的研究報告。詳見<a class="link" href="https://www.r-project.org"  target="_blank" rel="noopener"
+    ><em>The R Project for Statistical Computing</em></a>。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>由謝益輝所開發的R套件，詳見<a class="link" href="https://pkgs.rstudio.com/blogdown/"  target="_blank" rel="noopener"
+<p>由謝益輝所開發的<strong>R</strong>套件，詳見<a class="link" href="https://pkgs.rstudio.com/blogdown/"  target="_blank" rel="noopener"
     ><em>Blogdown</em></a>。&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>Pandoc是一個開源的文本轉換工具，Blogdown的文件標記轉換依賴其功能。詳見<a class="link" href="https://pandoc.org"  target="_blank" rel="noopener"
-    >Pandoc.org</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><strong>Pandoc</strong>是一個開源的文本轉換工具，<strong>Blogdown</strong>的文件標記轉換依賴其功能。詳見<a class="link" href="https://pandoc.org"  target="_blank" rel="noopener"
+    ><em>Pandoc.org</em></a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>Blogdown所依賴的靜態網頁架構，詳見<a class="link" href="https://gohugo.io"  target="_blank" rel="noopener"
-    >The world&rsquo;s fastest framework for building websites | Hugo</a>。&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><strong>Blogdown</strong>所依賴的靜態網頁架構，詳見<a class="link" href="https://gohugo.io"  target="_blank" rel="noopener"
+    ><em>The world&rsquo;s fastest framework for building websites | Hugo</em></a>。&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>由John Gruber所開發的輕量標記語言，因未訂定標準，目前已出現許多衍生版本。Blogdown所使用的版本為Pandoc Markdown，此版本也運用在RMarkdown及Bookdown等R套件中。本文僅列出本站需使用的標記方式，完整詳細的標記規則請見Rmarkdown中的說明<a class="link" href="https://garrettgman.github.io/rmarkdown/authoring_pandoc_markdown.html"  target="_blank" rel="noopener"
-    >Pandoc Markdown</a>。&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>由<strong>John Gruber</strong>所開發的輕量標記語言，因未訂定標準，目前已出現許多衍生版本。<strong>Blogdown</strong>所使用的版本為<strong>Pandoc Markdown</strong>，此版本也運用在<strong>RMarkdown</strong>及<strong>Bookdown</strong>等<strong>R</strong>套件中。本文僅列出本站需使用的標記方式，完整詳細的標記規則請見<strong>Rmarkdown</strong>中的說明<a class="link" href="https://garrettgman.github.io/rmarkdown/authoring_pandoc_markdown.html"  target="_blank" rel="noopener"
+    ><em>Pandoc Markdown</em></a>。&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
-<p>KaTex是一種支援LaTex與網頁顯示的數學公式支援，KaTex在目前某些開發較完整的Markdown編輯器中作為數學公式的補充標記語言。&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><strong>KaTex</strong>是一種支援<strong>LaTex</strong>與網頁顯示的數學公式支援，<strong>KaTex</strong>在目前某些開發較完整的<strong>Markdown</strong>編輯器中作為數學公式的補充標記語言詳見<a class="link" href="https://katex.org"  target="_blank" rel="noopener"
+    ><em>KaTeX - The fastest math typesetting library for the web</em></a>。&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
-<p>Shortcode是Hugo用以補充Markdown無法在渲染後的頁面顯示多媒體的語法延伸方案。&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><strong>Shortcode</strong>是<strong>Hugo</strong>用以補充<strong>Markdown</strong>無法在渲染後的頁面顯示多媒體的語法延伸方案。&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:8" role="doc-endnote">
-<p>BibTex是一種與LaTex配合，作為引用文獻資料的標記文本格式，也是目前許多Markdown編輯器處理引用文獻的主流格式，詳見<a class="link" href="http://www.bibtex.org"  target="_blank" rel="noopener"
-    >BibTex.org</a>。&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><strong>BibTex</strong>是一種與<strong>LaTex</strong>配合，作為引用文獻資料的標記文本格式，也是目前許多<strong>Markdown</strong>編輯器處理引用文獻的主流格式，詳見<a class="link" href="http://www.bibtex.org"  target="_blank" rel="noopener"
+    ><em>BibTex.org</em></a>。&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:9" role="doc-endnote">
-<p>SPSS全稱為Statistical Package for the Social Sciences，是IBM所推出的又弱又貴的統計軟體，詳見<a class="link" href="http://www.ibm.com/analytics/us/en/technology/spss/"  target="_blank" rel="noopener"
-    >SPSS</a>。&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><strong>Zotero</strong>是一個開源的文獻管理軟體專案，擁有許多實用的外掛。目前的Beta版帶有強大的筆記功能，預計於不久後也會推出<strong>iOS</strong>版本，詳見<a class="link" href="https://www.zotero.org"  target="_blank" rel="noopener"
+    ><em>Zotero</em></a>。&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:10" role="doc-endnote">
-<p>Rmarkdown是RStudio以Markdown為基礎，用以整合研究與書寫流程的功能套件，詳見<a class="link" href="https://rmarkdown.rstudio.com"  target="_blank" rel="noopener"
-    >Rmarkdown</a>。&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><strong>SPSS</strong>全稱為<strong>Statistical Package for the Social Sciences</strong>，是<strong>IBM</strong>所推出的又弱又貴的統計軟體，詳見<a class="link" href="http://www.ibm.com/analytics/us/en/technology/spss/"  target="_blank" rel="noopener"
+    ><em><strong>SPSS</strong></em></a>。&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:11" role="doc-endnote">
-<p>Zotero是一個開源的文獻管理軟體專案，擁有許多實用的外掛。目前的Beta版帶有強大的筆記功能，預計於不久後也會推出iOS版本，詳見<a class="link" href="https://www.zotero.org"  target="_blank" rel="noopener"
-    >Zotero</a>。&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Rmarkdown是RStudio以Markdown為基礎，用以整合研究與書寫流程的功能套件，詳見<a class="link" href="https://rmarkdown.rstudio.com"  target="_blank" rel="noopener"
+    >Rmarkdown</a>。&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:12" role="doc-endnote">
-<p>卡片盒（Zettelkasten）是提出社會系統理論、致力於社會風險管理的德國學者Niklas Luhemann，生前使用的筆記法。最近有許多紅到發紫的筆記軟體都是以這種網絡化筆記的概念來設計。但其實此種筆記法需要有非常嚴謹的層級規範配合，才能有效控制雜訊，並非許多中文教學文章所述，不斷紀錄和連結就可以變得跟他大佬一樣聰明俐落。是一種門檻極高的筆記方式，不推薦各位朋友使用。&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>卡片盒（<strong>Zettelkasten</strong>）是提出社會系統理論、致力於社會風險管理的德國學者<strong>Niklas Luhemann</strong>，生前使用的筆記法。最近有許多紅到發紫的筆記軟體都是以這種網絡化筆記的概念來設計。但其實此種筆記法需要有非常嚴謹的層級規範配合，才能有效控制雜訊，並非許多中文教學文章所述，不斷紀錄和連結就可以變得跟他大佬一樣聰明俐落。是一種門檻極高的筆記方式，不推薦各位朋友使用。&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:13" role="doc-endnote">
-<p>YAML是一種序列化的格式語言，常見於網站構建及資料庫的描述等用途上，也是目前Markdown文本儲存元數據的主要格式，參見<a class="link" href="https://yaml.org"  target="_blank" rel="noopener"
-    >yaml.org</a>。&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><strong>YAML</strong>是一種序列化的格式語言，常見於網站構建及資料庫的描述等用途上，也是目前<strong>Markdown</strong>文本儲存元數據的主要格式，參見<a class="link" href="https://yaml.org"  target="_blank" rel="noopener"
+    ><em>yaml.org</em></a>。&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:14" role="doc-endnote">
 <p>CSL是一種引用格式語言，廣泛用於Zotero及<a class="link" href="https://www.mendeley.com/"  target="_blank" rel="noopener"
@@ -568,7 +572,7 @@
     </li>
     <li><a href="#第二部分格式說明">第二部分｜格式說明</a>
       <ol>
-        <li><a href="#文章結構">文章結構</a></li>
+        <li><a href="#結構與格式">結構與格式</a></li>
         <li><a href="#層級安排">層級安排</a></li>
         <li><a href="#引用格式">引用格式</a></li>
       </ol>
