@@ -208,12 +208,12 @@
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">今晚，我要來點阿岸米糕[^13]，還有阿宏師的雞肉飯加半熟蛋。
 
-[^13]: UberEat 的廣告質感好很多， FoodPanda 的廣告我都不忍直視。
+[^13]: <span class="gs">**UberEat**</span> 的廣告質感好很多， <span class="gs">**FoodPanda**</span> 的廣告我都不忍直視。
 </code></pre></div><ul>
 <li><strong>顯示效果</strong>：</li>
 </ul>
 <p>今晚，我要來點阿岸米糕<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>，還有阿宏師的雞肉飯加半熟蛋。</p>
-<p>如上列範例所示，註腳標註<code>[^13]</code>會顯示為含有數字13的上標。註腳的內容通常都會直接寫入註釋段落的下方，並在<code>[^13]:</code>後填入註釋的內容。本站及其他輸出為 HTML 頁面的情況時，顯示效果為將所有註腳集中在頁面的最下方，並提供雙向的跳轉連結；而在輸出為 <code>.pdf</code> 或 <code>.docx</code> 等文件時，則會出現在標註位置該頁面下方。</p>
+<p>如上列範例所示，一旦標記了 <code>[^13]</code> 的腳註時，通常都會直接在段落的下方，以 <code>[^13]:</code> 說明註釋的內容。顯示效果的部分則可以看到，標註後頁面會顯示含有數字13的上標，而所有註腳都會集中在本頁的最下方，並提供雙向的跳轉連結。這是本站及其他 HTML 輸出時的效果，而在輸出類型改為 <code>.pdf</code> 或 <code>.docx</code> 等多頁文件時，腳註則會直接出現在標註點的單頁下方。</p>
 <h3 id="blogdown">Blogdown</h3>
 <p>如上一小節所示， <strong>Markdown</strong> 的基本標記語法僅能提供平面書寫的需求，而網頁貼文其實還包含了插入 <strong>YouTube</strong> 影片或社群網站內容等多媒體需求。在傳統的 <strong>Markdown</strong> 書寫當中，會直接以 <strong>HTML</strong> 語言來補充，但既然我們都使用 <strong>Blogdown</strong> 套件了，那這些功能當然也是要以更簡潔的語法方案來取代嘍。</p>
 <p>雖然說本站所使用的語法集是由 <strong>R</strong> 套件 <strong>Blogdown</strong> 所提供，但其實除了 <strong>Shortcode</strong> 及 <strong>R code</strong> 之外，大部分允許使用 <strong>Pandoc</strong> 轉換的編輯器都有提供對 <strong>KaTex</strong> 數學公式及 <strong>BibTex</strong> 書目資訊的支援。平常使用下，都是可以無痛轉換的。</p>
@@ -403,7 +403,10 @@
 <p>在 <strong>Markdown</strong> 文件當中，第一級標題通常就代表整份文件的大標，第二級之後才是內文各章節的標題。但依編輯器與轉換設定的不同，渲染規則也會有些許差異。例如，使用 <strong>RStudio</strong> 時，如果將文本類型指定為 <strong>rtical</strong> （如 <strong>ctexart</strong> ）或是使用 <strong>bookdown</strong> （如 <strong>ctexbook</strong> ）時，第一級標題便會是各章節的標題，而文件的大標則會儲存在 <strong>YAML</strong> 當中； <strong>Blogdown</strong> 雖然也將大標儲存在 <strong>YAML</strong> 中，但內文則遵循一般的標題規則，若在內文使用第一集標題的話，雖然會顯示其格式，但目錄表會忽略不計。特例的部分就只能請各位跟編輯器好好培養感情，理解自己常用的格式及渲染的效果了。</p>
 <p>一般的 <strong>Markdown</strong> 提供有六層的標題記號，但第五級之後的標題文字會漸漸變得比段落內文的字體還小，而且不會出現在預設生成的目錄表中。因此，除非有特別調整渲染格式，一般 <strong>Markdown</strong> 文本在輸出為 <strong>HTML</strong> 時，<strong>文章結構不建議超過四級</strong>。</p>
 <h3 id="引用格式">引用格式</h3>
-<p>待補中⋯⋯</p>
+<p>待補喔！</p>
+<h2 id="後記">後記</h2>
+<p>雖然說這篇文章一開始只是要說明本站使用的工具，藉此讓作者和編輯可以有一個參照的索引。但開始寫下去之後才意識到，原來一個以 <strong>Blogdown</strong> 所製作的網頁，在技術上竟然會牽涉到這麼多東西。尤其是寫第一部分標記語言時，本來僅僅想把各種標記語法平行羅列、示範樣式就好。但寫一寫才開始覺得，如果沒有更多技術索引，包括：各種類型的 <strong>IDE</strong> 或編輯器、 <strong>YAML</strong> 、 <strong>Pandoc</strong> 、 <strong>BibTex</strong> 等東東的話，大概也很難讓入門的使用者掌握 <strong>Markdown</strong> 最基本的運用樣貌。</p>
+<p>於是，修修補補寫完之後，反而看起來比較像一個濃縮版的開源文本寫作關鍵詞指引（以架站為例）。雖然說要架站的話可能還有超多東西沒有提到，但 <strong>Blogdown</strong> 真的是很輕量的東西，就算都參考（<strong>謝益輝</strong>的）官方文件其實也就都夠了。最後的最後，如果這篇文章讓你暈暈的，那就是我一次丟太多詞彙出來了，謹此向各位道歉。</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -454,7 +457,7 @@
 <p>卡片盒 (<strong>Zettelkasten</strong>) 是提出社會系統理論、致力於社會風險管理的德國學者 <strong>Niklas Luhemann</strong> ，生前使用的筆記法。最近有許多紅到發紫的筆記軟體都是以這種網絡化筆記的概念來設計。但其實此種筆記法需要有非常嚴謹的層級規範配合，才能有效控制雜訊，並非許多中文教學文章所述，不斷紀錄和連結就可以變得跟他大佬一樣聰明俐落。是一種門檻極高的筆記方式，不推薦各位朋友使用。&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:13" role="doc-endnote">
-<p>UberEat 的廣告質感好很多， FoodPanda 的廣告我都不忍直視。&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><strong>UberEat</strong> 的廣告質感好很多， <strong>FoodPanda</strong> 的廣告我都不忍直視。&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:14" role="doc-endnote">
 <p><strong>YAML</strong>是一種序列化的格式語言，常見於網站構建及資料庫的描述等用途上，也是目前 <strong>Markdown</strong> 文本儲存後設資料的主要格式，參見 <a class="link" href="https://yaml.org"  target="_blank" rel="noopener"
@@ -685,6 +688,7 @@
         <li><a href="#引用格式">引用格式</a></li>
       </ol>
     </li>
+    <li><a href="#後記">後記</a></li>
   </ol>
 </nav>
                 </div>

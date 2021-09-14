@@ -88,12 +88,12 @@
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;今晚，我要來點阿岸米糕[^13]，還有阿宏師的雞肉飯加半熟蛋。
 
-[^13]: UberEat 的廣告質感好很多， FoodPanda 的廣告我都不忍直視。
+[^13]: &lt;span class=&#34;gs&#34;&gt;**UberEat**&lt;/span&gt; 的廣告質感好很多， &lt;span class=&#34;gs&#34;&gt;**FoodPanda**&lt;/span&gt; 的廣告我都不忍直視。
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;顯示效果&lt;/strong&gt;：&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;今晚，我要來點阿岸米糕&lt;sup id=&#34;fnref:13&#34;&gt;&lt;a href=&#34;#fn:13&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;13&lt;/a&gt;&lt;/sup&gt;，還有阿宏師的雞肉飯加半熟蛋。&lt;/p&gt;
-&lt;p&gt;如上列範例所示，註腳標註&lt;code&gt;[^13]&lt;/code&gt;會顯示為含有數字13的上標。註腳的內容通常都會直接寫入註釋段落的下方，並在&lt;code&gt;[^13]:&lt;/code&gt;後填入註釋的內容。本站及其他輸出為 HTML 頁面的情況時，顯示效果為將所有註腳集中在頁面的最下方，並提供雙向的跳轉連結；而在輸出為 &lt;code&gt;.pdf&lt;/code&gt; 或 &lt;code&gt;.docx&lt;/code&gt; 等文件時，則會出現在標註位置該頁面下方。&lt;/p&gt;
+&lt;p&gt;如上列範例所示，一旦標記了 &lt;code&gt;[^13]&lt;/code&gt; 的腳註時，通常都會直接在段落的下方，以 &lt;code&gt;[^13]:&lt;/code&gt; 說明註釋的內容。顯示效果的部分則可以看到，標註後頁面會顯示含有數字13的上標，而所有註腳都會集中在本頁的最下方，並提供雙向的跳轉連結。這是本站及其他 HTML 輸出時的效果，而在輸出類型改為 &lt;code&gt;.pdf&lt;/code&gt; 或 &lt;code&gt;.docx&lt;/code&gt; 等多頁文件時，腳註則會直接出現在標註點的單頁下方。&lt;/p&gt;
 &lt;h3 id=&#34;blogdown&#34;&gt;Blogdown&lt;/h3&gt;
 &lt;p&gt;如上一小節所示， &lt;strong&gt;Markdown&lt;/strong&gt; 的基本標記語法僅能提供平面書寫的需求，而網頁貼文其實還包含了插入 &lt;strong&gt;YouTube&lt;/strong&gt; 影片或社群網站內容等多媒體需求。在傳統的 &lt;strong&gt;Markdown&lt;/strong&gt; 書寫當中，會直接以 &lt;strong&gt;HTML&lt;/strong&gt; 語言來補充，但既然我們都使用 &lt;strong&gt;Blogdown&lt;/strong&gt; 套件了，那這些功能當然也是要以更簡潔的語法方案來取代嘍。&lt;/p&gt;
 &lt;p&gt;雖然說本站所使用的語法集是由 &lt;strong&gt;R&lt;/strong&gt; 套件 &lt;strong&gt;Blogdown&lt;/strong&gt; 所提供，但其實除了 &lt;strong&gt;Shortcode&lt;/strong&gt; 及 &lt;strong&gt;R code&lt;/strong&gt; 之外，大部分允許使用 &lt;strong&gt;Pandoc&lt;/strong&gt; 轉換的編輯器都有提供對 &lt;strong&gt;KaTex&lt;/strong&gt; 數學公式及 &lt;strong&gt;BibTex&lt;/strong&gt; 書目資訊的支援。平常使用下，都是可以無痛轉換的。&lt;/p&gt;
@@ -283,7 +283,10 @@
 &lt;p&gt;在 &lt;strong&gt;Markdown&lt;/strong&gt; 文件當中，第一級標題通常就代表整份文件的大標，第二級之後才是內文各章節的標題。但依編輯器與轉換設定的不同，渲染規則也會有些許差異。例如，使用 &lt;strong&gt;RStudio&lt;/strong&gt; 時，如果將文本類型指定為 &lt;strong&gt;rtical&lt;/strong&gt; （如 &lt;strong&gt;ctexart&lt;/strong&gt; ）或是使用 &lt;strong&gt;bookdown&lt;/strong&gt; （如 &lt;strong&gt;ctexbook&lt;/strong&gt; ）時，第一級標題便會是各章節的標題，而文件的大標則會儲存在 &lt;strong&gt;YAML&lt;/strong&gt; 當中； &lt;strong&gt;Blogdown&lt;/strong&gt; 雖然也將大標儲存在 &lt;strong&gt;YAML&lt;/strong&gt; 中，但內文則遵循一般的標題規則，若在內文使用第一集標題的話，雖然會顯示其格式，但目錄表會忽略不計。特例的部分就只能請各位跟編輯器好好培養感情，理解自己常用的格式及渲染的效果了。&lt;/p&gt;
 &lt;p&gt;一般的 &lt;strong&gt;Markdown&lt;/strong&gt; 提供有六層的標題記號，但第五級之後的標題文字會漸漸變得比段落內文的字體還小，而且不會出現在預設生成的目錄表中。因此，除非有特別調整渲染格式，一般 &lt;strong&gt;Markdown&lt;/strong&gt; 文本在輸出為 &lt;strong&gt;HTML&lt;/strong&gt; 時，&lt;strong&gt;文章結構不建議超過四級&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;引用格式&#34;&gt;引用格式&lt;/h3&gt;
-&lt;p&gt;待補中⋯⋯&lt;/p&gt;
+&lt;p&gt;待補喔！&lt;/p&gt;
+&lt;h2 id=&#34;後記&#34;&gt;後記&lt;/h2&gt;
+&lt;p&gt;雖然說這篇文章一開始只是要說明本站使用的工具，藉此讓作者和編輯可以有一個參照的索引。但開始寫下去之後才意識到，原來一個以 &lt;strong&gt;Blogdown&lt;/strong&gt; 所製作的網頁，在技術上竟然會牽涉到這麼多東西。尤其是寫第一部分標記語言時，本來僅僅想把各種標記語法平行羅列、示範樣式就好。但寫一寫才開始覺得，如果沒有更多技術索引，包括：各種類型的 &lt;strong&gt;IDE&lt;/strong&gt; 或編輯器、 &lt;strong&gt;YAML&lt;/strong&gt; 、 &lt;strong&gt;Pandoc&lt;/strong&gt; 、 &lt;strong&gt;BibTex&lt;/strong&gt; 等東東的話，大概也很難讓入門的使用者掌握 &lt;strong&gt;Markdown&lt;/strong&gt; 最基本的運用樣貌。&lt;/p&gt;
+&lt;p&gt;於是，修修補補寫完之後，反而看起來比較像一個濃縮版的開源文本寫作關鍵詞指引（以架站為例）。雖然說要架站的話可能還有超多東西沒有提到，但 &lt;strong&gt;Blogdown&lt;/strong&gt; 真的是很輕量的東西，就算都參考（&lt;strong&gt;謝益輝&lt;/strong&gt;的）官方文件其實也就都夠了。最後的最後，如果這篇文章讓你暈暈的，那就是我一次丟太多詞彙出來了，謹此向各位道歉。&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -334,7 +337,7 @@
 &lt;p&gt;卡片盒 (&lt;strong&gt;Zettelkasten&lt;/strong&gt;) 是提出社會系統理論、致力於社會風險管理的德國學者 &lt;strong&gt;Niklas Luhemann&lt;/strong&gt; ，生前使用的筆記法。最近有許多紅到發紫的筆記軟體都是以這種網絡化筆記的概念來設計。但其實此種筆記法需要有非常嚴謹的層級規範配合，才能有效控制雜訊，並非許多中文教學文章所述，不斷紀錄和連結就可以變得跟他大佬一樣聰明俐落。是一種門檻極高的筆記方式，不推薦各位朋友使用。&amp;#160;&lt;a href=&#34;#fnref:12&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:13&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;UberEat 的廣告質感好很多， FoodPanda 的廣告我都不忍直視。&amp;#160;&lt;a href=&#34;#fnref:13&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UberEat&lt;/strong&gt; 的廣告質感好很多， &lt;strong&gt;FoodPanda&lt;/strong&gt; 的廣告我都不忍直視。&amp;#160;&lt;a href=&#34;#fnref:13&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:14&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;&lt;strong&gt;YAML&lt;/strong&gt;是一種序列化的格式語言，常見於網站構建及資料庫的描述等用途上，也是目前 &lt;strong&gt;Markdown&lt;/strong&gt; 文本儲存後設資料的主要格式，參見 &lt;a class=&#34;link&#34; href=&#34;https://yaml.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
