@@ -152,7 +152,7 @@
 <li><a class="link" href="https://www.zhihu.com/question/23427617/answer/1461195696"  target="_blank" rel="noopener"
     ><em>如何构建自己的笔记系统？ - 知乎</em></a>（請用電腦版模式打開，手機版瀏覽需要知乎app）</li>
 </ul>
-<p>我並不是完全的純文本信徒，我除了在意資料遷徙的自由度之外，更注重的是文獻來源的整理與運用，而且現在大多數的 <strong>Markdown</strong> 編輯器也都支援富文本等 <strong>WYSIWYG</strong> 文件的格式辨認。因此，使用純文本在資料遷徙上比較自由的認識論是必須受到質疑的，尤其是在充滿不少富文本開源編輯器的當代世界，其格式支援並不是什麼大問題，比較要思考的反而是如何在末日下的電力危機，把資料從電腦裡搬出來吧。</p>
+<p>我並不是完全的純文本信徒，我除了在意資料遷徙的自由度之外，更注重的是文獻來源的整理與運用，而且現在大多數的 <strong>Markdown</strong> 編輯器也都支援富文本等 <strong>WYSIWYG</strong> 文件的格式辨認。因此，使用純文本在資料遷徙上比較自由的認識論是必須受到質疑的，尤其是在充滿不少富文本開源編輯器的當代世界，格式支援並不是什麼大問題，比較要思考的反而是如何在末日下的電力危機，把資料從電腦裡搬出來。</p>
 <p>在與 <strong>Markdownism</strong> 拉出一點距離後，我的工作流程中並沒有最近很紅的 <strong>Obsidian</strong> 或 <strong>Roam Research</strong> 等純文本網絡化筆記軟體，我反而在 <strong>Zotero</strong><sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> 下蒐集、整理資料並製作富文本筆記，然後在寫作時直接將內容複製到 <strong>RStudio</strong> 及 <strong>Mark Text</strong> 等編輯器中，並用 <strong>Git</strong> 控制版本。雖然純文本已經挾著 <strong>Markdown</strong> 的潮流，勢不可擋地進入到書寫編輯的各領域當中，但依需求選擇適合自己的工具並與 <strong>Markdown</strong> 所擁有的自由度配合才是最重要的。</p>
 <p>回過頭來，這篇文章要說明的其實是本站使用的工具以及調和此工具與（ <strong>Word</strong> 式的）舊書寫習慣之間的落差，而這些 <strong>Markdown</strong> 的入門資訊恰恰好也會有助於理解目前電腦書寫的趨勢。最後，技術細節的部分請善用 <a class="link" href="https://duckduckgo.com/"  target="_blank" rel="noopener"
     ><strong>Duckduckgo</strong></a> 或 <a class="link" href="https://www.startpage.com"  target="_blank" rel="noopener"
@@ -202,23 +202,20 @@
     ><em>Markdown Syntax Guide</em></a> (<strong>Markdown</strong>)</p>
 </li>
 </ul>
-<p>這邊需要特別說明的是腳註的語法。腳註並非 <strong>Markdown</strong> 的原生功能，但許多編輯器都已經支援註腳的語法，而且在上引的本站模板範例當中也有示範，因此直接在這邊稍作說明。註腳的語法為<code>[^數字]</code>，數字的部分需要編輯者自行編碼，以下範例供參：</p>
+<p>這邊需要特別說明的是腳註的語法。腳註並非 <strong>Markdown</strong> 的原生功能，但許多編輯器都已經支援腳註的語法，而且在上引的本站模板範例當中也有示範，因此直接在這邊稍作說明。其語法為<code>[^數字]</code>，數字的部分需要編輯者自行編碼，以下範例供參：</p>
 <ul>
 <li><strong>標註方式</strong>：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">今晚，我要來點阿岸米糕[^13]，還有阿宏師的雞肉飯加半熟蛋。
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">今晚，我想要來點阿岸米糕[^13]，還有阿宏師的雞肉飯加半熟蛋。
 
 [^13]: <span class="gs">**UberEat**</span> 的廣告質感好很多， <span class="gs">**FoodPanda**</span> 的廣告我都不忍直視。
 </code></pre></div><ul>
 <li><strong>顯示效果</strong>：</li>
 </ul>
-<p>今晚，我要來點阿岸米糕<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>，還有阿宏師的雞肉飯加半熟蛋。</p>
-<p>如上列範例所示，一旦標記了 <code>[^13]</code> 的腳註時，通常都會直接在段落的下方，以 <code>[^13]:</code> 說明註釋的內容。顯示效果的部分則可以看到，標註後頁面會顯示含有數字13的上標，而所有註腳都會集中在本頁的最下方，並提供雙向的跳轉連結。這是本站及其他 HTML 輸出時的效果，而在輸出類型改為 <code>.pdf</code> 或 <code>.docx</code> 等多頁文件時，腳註則會直接出現在標註點的單頁下方。</p>
-<h3 id="blogdown">Blogdown</h3>
-<p>如上一小節所示， <strong>Markdown</strong> 的基本標記語法僅能提供平面書寫的需求，而網頁貼文其實還包含了插入 <strong>YouTube</strong> 影片或社群網站內容等多媒體需求。在傳統的 <strong>Markdown</strong> 書寫當中，會直接以 <strong>HTML</strong> 語言來補充，但既然我們都使用 <strong>Blogdown</strong> 套件了，那這些功能當然也是要以更簡潔的語法方案來取代嘍。</p>
-<p>雖然說本站所使用的語法集是由 <strong>R</strong> 套件 <strong>Blogdown</strong> 所提供，但其實除了 <strong>Shortcode</strong> 及 <strong>R code</strong> 之外，大部分允許使用 <strong>Pandoc</strong> 轉換的編輯器都有提供對 <strong>KaTex</strong> 數學公式及 <strong>BibTex</strong> 書目資訊的支援。平常使用下，都是可以無痛轉換的。</p>
+<p>今晚，我想要來點阿岸米糕<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>，還有阿宏師的雞肉飯加半熟蛋。</p>
+<p>如上列範例所示，一旦標記了 <code>[^13]</code> 的腳註，通常都會直接在段落的下方，以 <code>[^13]:</code> 說明註釋的內容。顯示效果的部分則可以看到，標註後會在錨點顯示含有數字13的上標，而所有腳註說明都會集中在頁面的最下方，並提供雙向的跳轉連結。這是本站及其他 HTML 輸出時的效果，而在輸出類型改為 <code>.pdf</code> 或 <code>.docx</code> 等多頁文件時，腳註說明則會直接出現在標註點的單頁下方。</p>
 <h4 id="yaml">YAML</h4>
-<p>在開始介紹 <strong>Blogdown</strong> 可以運用的語法前，必須先介紹一個叫做 <strong>YAML</strong><sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup> 的東東。這個 <strong>YAML</strong> 是儲存文件後設資料 (metadata)的區塊，一般會置於文件開頭，用以描述檔案性質或是用於寫入特定程式功能執行的指示，資訊內容可以包含標題、簡述、日期時間、語言類型、標籤、⋯⋯等對應到 <strong>HTML</strong> 語言的基本資訊；也可以包含配合編輯器或 <strong>Pandoc</strong> 的功能訊息，例如：書目資訊位置、渲染格式、程式碼模式、⋯⋯等。而本站在 <strong>Blogdown</strong> 架構下的 <strong>YAML</strong> 以 <strong>HTML</strong> 的應用為主，以下就本篇文章的 <strong>YAML</strong> 為例來說明各元素所代表的意義：</p>
+<p>在繼續往下之前，必須先介紹一個叫做 <strong>YAML</strong><sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup> 的東東。<strong>YAML</strong> 是儲存文件後設資料 (metadata)的區塊，一般會置於文件開頭，用以描述檔案性質或是用於寫入特定程式功能執行的指示，資訊內容可以包含標題、簡述、日期時間、語言類型、標籤、⋯⋯等對應到 <strong>HTML</strong> 語言的基本資訊；也可以包含配合編輯器或 <strong>Pandoc</strong> 的功能訊息，例如：書目資訊位置、渲染格式、程式碼模式、⋯⋯等。而本站在 <strong>Blogdown</strong> 架構下的 <strong>YAML</strong> 以 <strong>HTML</strong> 的應用為主，以下就本篇文章的 <strong>YAML</strong> 為例來說明各元素所代表的意義：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">源稿の技術文件</span><span class="w">
 </span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l">陳奕達</span><span class="w">
 </span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;2021-09-09&#39;</span><span class="w">
@@ -260,8 +257,11 @@
     ><strong>Disqus</strong></a> 提供。但不知道為什麼這篇的留言功能掛掉了，明明其他篇都正常。</p>
 </li>
 </ul>
+<h3 id="blogdown">Blogdown</h3>
+<p>如上一小節所示， <strong>Markdown</strong> 的基本標記語法僅能提供平面書寫的需求，而網頁貼文其實還包含了插入 <strong>YouTube</strong> 影片或社群網站內容等多媒體需求。在傳統的 <strong>Markdown</strong> 書寫當中，會直接以 <strong>HTML</strong> 語言來補充，但既然我們都使用 <strong>Blogdown</strong> 套件了，那這些功能當然也是要以更簡潔的語法方案來取代嘍。</p>
+<p>雖然說本站所使用的語法集是由 <strong>R</strong> 套件 <strong>Blogdown</strong> 所提供，但其實除了 <strong>Shortcode</strong> 及 <strong>R code</strong> 之外，大部分允許使用 <strong>Pandoc</strong> 轉換的編輯器都有提供對 <strong>KaTex</strong> 數學公式及 <strong>BibTex</strong> 書目資訊的支援。平常使用下，都是可以無痛轉換的。</p>
 <h4 id="shortcode">Shortcode</h4>
-<p><strong>Shortcode</strong> 是由 <strong>Hugo</strong> 靜態網頁架構提供，藉此補充 <strong>Markdown</strong> 標記語法對 <strong>HTML</strong> 支援的不足之處。因此， <strong>Hugo</strong> 的 <strong>Shortcode</strong> 其實是一組對應到所有 <strong>HTML</strong> 的語法支援，而大部分的基礎書寫語法、插入圖片及超連結語法等已有 <strong>Markdown</strong> 語法的支持，此小節僅需理解 <strong>YouTube</strong> 及 <strong>Vimeo</strong> 等多媒體影片的插入，以及對 <strong>Tweet</strong> 或 <strong>Instagram</strong> 等社群貼文的顯示語法，官方說明文件及本站模板示例如下。</p>
+<p><strong>Shortcode</strong> 是由 <strong>Hugo</strong> 靜態網頁架構提供，藉此補充 <strong>Markdown</strong> 標記語法對 <strong>HTML</strong> 支援的不足之處。因此， <strong>Hugo</strong> 的 <strong>Shortcode</strong> 其實是一組對應到所有 <strong>HTML</strong> 的語法支援，而大部分的基礎書寫語法、插入圖片及超連結語法等已有 <strong>Markdown</strong> 語法的支持，此小節僅需理解 <strong>YouTube</strong> 及 <strong>Vimeo</strong> 等多媒體影片的插入，以及對 <strong>Tweet</strong> 或 <strong>Instagram</strong> 等社群貼文的顯示語法。語法內容如官方說明文件及本站模板示例：</p>
 <ul>
 <li>
 <p><a class="link" href="https://gohugo.io/content-management/shortcodes/"  target="_blank" rel="noopener"
@@ -278,7 +278,7 @@
 </ul>
 <h4 id="r-code">R code</h4>
 <p>身為 <strong>R</strong> 套件的 <strong>Blogdown</strong> 理所當然地提供了 <strong>R code</strong> 的操作運算。含括在 <strong>R Markdown</strong> 生態中的 <strong>Blogdown</strong> 或 <strong>Bookdown</strong> ，都可以直接在文件渲染的過程中運算數據，並直接生成各種資料圖表，並且可以根據研究進度更新，或替換數據進行可重製研究。</p>
-<p>本站未來會提供一篇小研究來示範這個功能，也期待以後有機會看到在嘉義的主題下有更多此類型的文章。有用過 <strong>SPSS</strong> 且對統計或數據科學有興趣的朋友可藉此機會瞭解 <strong>R Markdown</strong> 的趣味所在，另外也推薦一本可再製研究的著作供各位參考。</p>
+<p>本站未來會提供一篇小研究來示範這個功能，也期待以後有機會看到在嘉義的主題下有更多此類型的文章。有用過 <strong>SPSS</strong> 且對統計或數據科學有興趣的朋友可藉此機會瞭解 <strong>R Markdown</strong> 的趣味所在，另外也推薦一本可再製研究的著作供各位參考：</p>
 <ul>
 <li><a class="link" href="https://rmarkdown.rstudio.com"  target="_blank" rel="noopener"
     ><em>R Markdown</em></a></li>
@@ -288,7 +288,7 @@
     ><em>Reproducible Research with R and RStudio (Third Edition)</em></a></li>
 </ul>
 <h4 id="mathematical">Mathematical</h4>
-<p>如上一小節所示，原生的 <strong>Markdown</strong> 並不支援數學公式的顯示。但由於學術書寫的需求逐漸拓及 <strong>Markdown</strong> 的領域，於是依附於 <strong>Pandoc</strong> 強大轉換能力的編輯器一一出現，它們借助於 <strong>KaTex</strong> 語法有效地顯示各種數學符號及其在公式當中的相對位置， <strong>KaTex</strong> 的技術文件及本站模板示例如下。</p>
+<p>如上一小節所示，原生的 <strong>Markdown</strong> 並不支援數學公式的顯示。但由於學術書寫的需求逐漸拓及 <strong>Markdown</strong> 的領域，於是依附於 <strong>Pandoc</strong> 強大轉換能力的編輯器一一出現，它們借助於 <strong>KaTex</strong> 語法有效地顯示各種數學符號及其在公式當中的相對位置， <strong>KaTex</strong> 的技術文件及本站模板示例如下：</p>
 <ul>
 <li>
 <p><a class="link" href="https://katex.org"  target="_blank" rel="noopener"
@@ -313,7 +313,7 @@
 <h2 id="第二部分格式說明">第二部分｜格式說明</h2>
 <p>如上述，本節最主要的目的是調和本站所運用的工具及（<strong>Word</strong>式的）舊書寫習慣之間的落差。如果你並非純文本的使用者也不必擔心技術上的問題，只需要理解文章格式即可，其他工作會由編輯處理。在這裏，你可能會有另一個疑惑&mdash;&mdash;自己的書寫風格真的能套用到一個標準格式當中嗎？這也大可不必擔心，這個格式僅僅是基於網站顯示的可讀性參考資料，並不是要框限作者文字的表現力。以下將分為後設資料、凡例、層級安排及引用格式等四個小節，進行簡短說明。</p>
 <h3 id="後設資料">後設資料</h3>
-<p>如第一部分對YAML的介紹，每篇文章除了內文之外，還會有後設資料的存在，以下將羅列說明文章所需提供的後設資料，並對應到YAML的資訊欄位，請作者依序填列，若是使用<strong>Word</strong>等<strong>WYSIWYG</strong>文件者，可將後設資料列於文章開頭，有星號者請務必填寫。</p>
+<p>如第一部分對YAML的介紹，每篇文章除了內文之外，還會有後設資料的存在，以下將羅列文章所需提供的後設資料，並對應YAML的資訊欄位，請作者依序填列。若是使用<strong>Word</strong>等<strong>WYSIWYG</strong>文件者，可將後設資料列於文章開頭，有星號者請務必填寫。</p>
 <table>
 <thead>
 <tr>
@@ -371,55 +371,39 @@
 </tbody>
 </table>
 <h3 id="凡例">凡例</h3>
-<p>本站各篇文章統一使用以下的格式：</p>
+<p>本站各篇文章使用以下的格式：</p>
 <ul>
-<li>
-<p><strong>檔案與位址</strong>：電腦或網路檔案與位址請以反引號 ` 包裹，如： <code>image/taiwan.png</code> ， <strong>Markdown</strong> 標記為 `image/taiwan.png` 。</p>
-</li>
-<li>
-<p><strong>行內程式碼</strong>：行內程式碼請以反引號 ` 包裹，如： <code>x&lt;-1</code> ， <strong>Markdown</strong> 標記為 `x&lt;-1`。</p>
-</li>
-<li>
-<p><strong>區塊程式碼</strong>：區塊程式碼請以三個反引號 ``` 包裹，並指定程式碼類型。如要插入 <strong>HTML</strong> 程式碼的話，請以 <strong>Markdown</strong> 標記開頭如 ``` {HTML} ，並在程式碼結束後以 ``` 包裹。</p>
-</li>
-<li>
-<p><strong>其他電腦程式物件</strong>：與電腦或各種程式有關的物件，請以反引號 ` 包裹，如： <code>Package</code> ， <strong>Markdown</strong> 標記為 `Package` 。</p>
-</li>
-<li>
-<p><strong>專有名詞</strong>：人名、公司、機構名稱、學科詞彙等，皆以粗體字表現。如：<strong>專有名詞</strong>， <strong>Markdown</strong> 標記為 <code>**專有名詞**</code>。</p>
-</li>
-<li>
-<p><strong>著作</strong>：著作包括文章、攝影、影音、書籍、⋯⋯等文學、科學及藝術領域受著作權法保障之著作，以斜體字表現。如：<em>著作</em>， <strong>Markdown</strong> 標記為 <code>*著作*</code> 。</p>
-</li>
-<li>
-<p><strong>中譯</strong>：提及外文之<strong>專有名詞</strong>或<strong>著作</strong>，請盡量使用原文，如為行文風格考慮必須以中文表現者，請盡量使用台灣本地約定俗成之譯法，並請在其後以括弧標註原文，或以註腳說明。</p>
-</li>
-<li>
-<p><strong>括弧</strong>：段落括弧內若全為英文者請使用半形括弧，如：他叫醬爆 (aka. Wenhui)；若含中日韓字元者則使用全形，如：好想跳舞（在厘個moment，要爆啦）。</p>
-</li>
+<li><strong>專有名詞</strong>：人名、公司、機構名稱、學科詞彙等，以粗體字表現。如：<strong>嘉義市崇文國民小學</strong>， <strong>Markdown</strong> 標記為 <code>**嘉義市崇文國民小學**</code>。</li>
+<li><strong>著作</strong>：著作包括文章、攝影、影音、書籍、⋯⋯等文學、科學及藝術領域受著作權法保障之著作，以斜體字表現。如：<em>嘉義市老戲院踏查誌</em>， <strong>Markdown</strong> 標記為 <code>*嘉義市老戲院踏查誌*</code> 。</li>
+<li><strong>中譯</strong>：提及英文<strong>專有名詞</strong>或<strong>著作</strong>時，請盡量使用原文，如是行文風格的考慮，而必須以中文表現者，特殊狀況外，請盡量使用台灣本地約定俗成之譯法，並在其後以括弧標註原文，或以腳註說明。</li>
+<li><strong>括弧</strong>：段落括弧內若全為英文者請使用半形括弧，如：他的名字叫做醬爆，本名何文輝 (Ho Wenhui)；若含中日韓字元者則使用全形，如：他興奮要跳舞（喺呢個moment要爆喇）。</li>
+<li><strong>行內程式碼</strong>：行內程式碼請以反引號 ` 包裹，如： <code>x = 1</code> ， <strong>Markdown</strong> 標記為 `x = 1`。</li>
+<li><strong>區塊程式碼</strong>：區塊程式碼請以三個反引號 ``` 包裹，並指定程式碼類型。如要插入 <strong>HTML</strong> 程式碼的話，請以 <strong>Markdown</strong> 標記開頭如 ``` {HTML} ，並在程式碼結束後以 ``` 包裹。</li>
+<li><strong>檔案與位址</strong>：電腦或網路檔案與位址請以反引號 ` 包裹，如： <code>image/taiwan.png</code> ， <strong>Markdown</strong> 標記為 `image/taiwan.png` 。</li>
+<li><strong>其他電腦程式物件</strong>：與電腦或各種程式有關的物件，請以反引號 ` 包裹，如： <code>Package</code> ， <strong>Markdown</strong> 標記為 `Package` 。</li>
 </ul>
 <h3 id="層級安排">層級安排</h3>
 <p>不管是哪一種類型的文本，標題層級絕對可以說是最重要的功能。但在 <strong>Word</strong> 等 <strong>WYSIWYG</strong> 文件當中，常常會因為「看起來像」的原因，而讓使用者混淆內文與標題的格式設定，在 <strong>Markdown</strong> 標記中則不常發生這種狀況。（試想你要把內文加粗、放大，並且得到和渲染後的某層標題一樣的字型和顏色效果的話，要加多少標記呢？）</p>
-<p>在 <strong>Markdown</strong> 文件當中，第一級標題通常就代表整份文件的大標，第二級之後才是內文各章節的標題。但依編輯器與轉換設定的不同，渲染規則也會有些許差異。例如，使用 <strong>RStudio</strong> 時，如果將文本類型指定為 <strong>rtical</strong> （如 <strong>ctexart</strong> ）或是使用 <strong>bookdown</strong> （如 <strong>ctexbook</strong> ）時，第一級標題便會是各章節的標題，而文件的大標則會儲存在 <strong>YAML</strong> 當中； <strong>Blogdown</strong> 雖然也將大標儲存在 <strong>YAML</strong> 中，但內文則遵循一般的標題規則，若在內文使用第一集標題的話，雖然會顯示其格式，但目錄表會忽略不計。特例的部分就只能請各位跟編輯器好好培養感情，理解自己常用的格式及渲染的效果了。</p>
-<p>一般的 <strong>Markdown</strong> 提供有六層的標題記號，但第五級之後的標題文字會漸漸變得比段落內文的字體還小，而且不會出現在預設生成的目錄表中。因此，除非有特別調整渲染格式，一般 <strong>Markdown</strong> 文本在輸出為 <strong>HTML</strong> 時，<strong>文章結構不建議超過四級</strong>。</p>
+<p>在 <strong>Markdown</strong> 文件當中，第一級標題通常就代表整份文件的大標，第二級之後才是內文各章節的標題。但依編輯器與轉換設定的不同，渲染規則也會有些許差異。例如，使用 <strong>RStudio</strong> 時，如果將文本類型指定為 <strong>rtical</strong> （如 <strong>ctexart</strong> ）或是使用 <strong>bookdown</strong> （如 <strong>ctexbook</strong> ）時，第一級標題便會是各章節的標題，而文件的大標則會儲存在 <strong>YAML</strong> 當中； <strong>Blogdown</strong> 雖然也將大標儲存在 <strong>YAML</strong> 中，但內文則遵循一般的標題規則，若在內文使用第一級標題的話，雖然會顯示其格式，但目錄表會忽略不計。特例的部分就只能請各位跟編輯器好好培養感情，理解自己常用的格式及渲染的效果了。</p>
+<p>而一般的 <strong>Markdown</strong> 提供有六層的標題記號，但第五級之後的標題文字會漸漸變得比段落內文的字體還小，而且不會出現在預設生成的目錄表中。因此，除非有特別調整渲染格式，一般 <strong>Markdown</strong> 文本在輸出為 <strong>HTML</strong> 時，<strong>文章結構不建議超過四級，因此，請在二到四級標題間規劃文章的結構</strong>。</p>
 <h3 id="引用格式">引用格式</h3>
-<p>待補喔！</p>
+<p>待補！</p>
 <h2 id="後記">後記</h2>
-<p>雖然說這篇文章一開始只是要說明本站使用的工具，藉此讓作者和編輯可以有一個參照的索引。但開始寫下去之後才意識到，原來一個以 <strong>Blogdown</strong> 所製作的網頁，在技術上竟然會牽涉到這麼多東西。尤其是寫第一部分標記語言時，本來僅僅想把各種標記語法平行羅列、示範樣式就好。但寫一寫才開始覺得，如果沒有更多技術索引，包括：各種類型的 <strong>IDE</strong> 或編輯器、 <strong>YAML</strong> 、 <strong>Pandoc</strong> 、 <strong>BibTex</strong> 等東東的話，大概也很難讓入門的使用者掌握 <strong>Markdown</strong> 最基本的運用樣貌。</p>
-<p>於是，修修補補寫完之後，反而看起來比較像一個濃縮版的開源文本寫作關鍵詞指引（以架站為例）。雖然說要架站的話可能還有超多東西沒有提到，但 <strong>Blogdown</strong> 真的是很輕量的東西，就算都參考（<strong>謝益輝</strong>的）官方文件其實也就都夠了。最後的最後，如果這篇文章讓你暈暈的，那就是我一次丟太多詞彙出來了，謹此向各位道歉。</p>
+<p>雖然說這篇文章一開始只是要說明本站使用的工具，藉此讓作者和編輯可以有一個參照的索引。但開始寫下去之後才意識到，原來以 <strong>Blogdown</strong> 所製作的網頁，在技術上竟然會牽涉到這麼多東西。尤其是寫第一部分標記語言時，本來僅想把各種標記語法平行羅列，並示範樣式就好。但寫一寫才開始覺得，如果沒有更多技術索引，包括：各種類型的 <strong>IDE</strong> 或編輯器、 <strong>YAML</strong> 、 <strong>Pandoc</strong> 、 <strong>BibTex</strong> 等東東的話，大概也很難讓入門的使用者掌握 <strong>Markdown</strong> 最基本的運用樣貌。</p>
+<p>修修補補寫完之後，本文看起來反而比較像是濃縮版的開源軟體寫作關鍵詞指引（以架站為例）。雖然說要架站的話可能還有超多東西沒有提到，但 <strong>Blogdown</strong> 其實是極輕量的架站框架，就算只參考（<strong>謝益輝</strong>的）官方文件，其實也足夠了。最後的最後，如果這篇文章讓你暈暈的，那就是我一次丟太多詞彙出來了，謹此向各位道歉。</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p><strong>R</strong>是一套運用於統計的開發環境，具有非常活潑的開發生態。透過開發者的集體努力， <strong>R</strong>有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各種類型的研究報告。詳見<a class="link" href="https://www.r-project.org"  target="_blank" rel="noopener"
+<p><strong>R</strong>是一套運用於統計的開發環境，具有非常活潑的使用者開發生態。透過使用者的集體努力， <strong>R</strong>有著相當豐富的套件，使得研究者除了處理統計資料外，也可以直接將研究成果渲染成各類型的圖表以及研究報告。詳見 <a class="link" href="https://www.r-project.org"  target="_blank" rel="noopener"
     ><em>The R Project for Statistical Computing</em></a>。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>由<strong>謝益輝</strong>所開發的<strong>R</strong>套件，詳見<a class="link" href="https://pkgs.rstudio.com/blogdown/"  target="_blank" rel="noopener"
+<p>由<strong>謝益輝</strong>所開發的<strong>R</strong>套件，詳見 <a class="link" href="https://pkgs.rstudio.com/blogdown/"  target="_blank" rel="noopener"
     ><em>Blogdown</em></a>。&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p><strong>Pandoc</strong>是一個開源的文本轉換工具，<strong>Blogdown</strong>的文件標記轉換依賴其功能。詳見<a class="link" href="https://pandoc.org"  target="_blank" rel="noopener"
+<p><strong>Pandoc</strong>是一個開源的文本轉換工具，<strong>Blogdown</strong>的文件標記轉換依賴其功能。詳見 <a class="link" href="https://pandoc.org"  target="_blank" rel="noopener"
     ><em>Pandoc.org</em></a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
@@ -667,11 +651,11 @@
           <ol>
             <li><a href="#開源編輯器推薦">開源編輯器推薦</a></li>
             <li><a href="#語法說明與顯示效果">語法說明與顯示效果</a></li>
+            <li><a href="#yaml">YAML</a></li>
           </ol>
         </li>
         <li><a href="#blogdown">Blogdown</a>
           <ol>
-            <li><a href="#yaml">YAML</a></li>
             <li><a href="#shortcode">Shortcode</a></li>
             <li><a href="#r-code">R code</a></li>
             <li><a href="#mathematical">Mathematical</a></li>
