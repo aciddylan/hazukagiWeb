@@ -11,6 +11,7 @@ menu:
     pre: user
     weight: -90
 title: About
+image: img/about.jpg
 comments: no
 ---
 
