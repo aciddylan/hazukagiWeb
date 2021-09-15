@@ -11,6 +11,7 @@ menu:
     pre: user
     weight: -90
 title: About
+author: 陳奕達
 image: img/about.jpg
 comments: no
 ---
